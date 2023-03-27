@@ -31,7 +31,16 @@ class MessageLookup extends MessageLookupByLibrary {
         "descWalkthrough4": MessageLookupByLibrary.simpleMessage(
             "Pay with any payment method you have, transfer bank, e-wallet, credit card, or paylater ? we accept all payment way."),
         "textDone": MessageLookupByLibrary.simpleMessage("Done"),
+        "textEmail": MessageLookupByLibrary.simpleMessage("E-mail"),
+        "textEmptyEmail":
+            MessageLookupByLibrary.simpleMessage("Please enter a valid email."),
+        "textEmptyPassword": MessageLookupByLibrary.simpleMessage(
+            "Please enter a valid password."),
+        "textLogin": MessageLookupByLibrary.simpleMessage("Login"),
         "textNext": MessageLookupByLibrary.simpleMessage("Next"),
+        "textOr": MessageLookupByLibrary.simpleMessage("Or"),
+        "textPassword": MessageLookupByLibrary.simpleMessage("Password"),
+        "textSignUp": MessageLookupByLibrary.simpleMessage("Register"),
         "textSkip": MessageLookupByLibrary.simpleMessage("Skip"),
         "titleWalkthrough1": MessageLookupByLibrary.simpleMessage("Best Shop"),
         "titleWalkthrough2": MessageLookupByLibrary.simpleMessage("Safe"),

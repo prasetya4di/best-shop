@@ -9,5 +9,12 @@
   "descWalkthrough4": "Bayar dengan semua metode pembayaran yang kamu miliki, transfer bank, e-wallet, kartu kredit, atau paylater ? semua nya bisa digunakan di sini.",
   "textNext": "Selanjutnya",
   "textDone": "Selesai",
-  "textSkip": "Lewati"
+  "textSkip": "Lewati",
+  "textOr": "Atau",
+  "textLogin": "Masuk",
+  "textRegister": "Daftar",
+  "textEmail": "E-mail",
+  "textPassword": "Kata Sandi",
+  "textEmptyEmail": "E-mail belum diisi.",
+  "textEmptyPassword": "Password belum diisi."
 }

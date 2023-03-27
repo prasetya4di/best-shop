@@ -160,6 +160,76 @@ class S {
       args: [],
     );
   }
+
+  /// `Or`
+  String get textOr {
+    return Intl.message(
+      'Or',
+      name: 'textOr',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Login`
+  String get textLogin {
+    return Intl.message(
+      'Login',
+      name: 'textLogin',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Register`
+  String get textSignUp {
+    return Intl.message(
+      'Register',
+      name: 'textSignUp',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `E-mail`
+  String get textEmail {
+    return Intl.message(
+      'E-mail',
+      name: 'textEmail',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Password`
+  String get textPassword {
+    return Intl.message(
+      'Password',
+      name: 'textPassword',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Please enter a valid email.`
+  String get textEmptyEmail {
+    return Intl.message(
+      'Please enter a valid email.',
+      name: 'textEmptyEmail',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Please enter a valid password.`
+  String get textEmptyPassword {
+    return Intl.message(
+      'Please enter a valid password.',
+      name: 'textEmptyPassword',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

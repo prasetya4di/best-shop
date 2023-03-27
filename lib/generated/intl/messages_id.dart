@@ -31,7 +31,15 @@ class MessageLookup extends MessageLookupByLibrary {
         "descWalkthrough4": MessageLookupByLibrary.simpleMessage(
             "Bayar dengan semua metode pembayaran yang kamu miliki, transfer bank, e-wallet, kartu kredit, atau paylater ? semua nya bisa digunakan di sini."),
         "textDone": MessageLookupByLibrary.simpleMessage("Selesai"),
+        "textEmail": MessageLookupByLibrary.simpleMessage("E-mail"),
+        "textEmptyEmail":
+            MessageLookupByLibrary.simpleMessage("E-mail belum diisi."),
+        "textEmptyPassword":
+            MessageLookupByLibrary.simpleMessage("Password belum diisi."),
+        "textLogin": MessageLookupByLibrary.simpleMessage("Masuk"),
         "textNext": MessageLookupByLibrary.simpleMessage("Selanjutnya"),
+        "textOr": MessageLookupByLibrary.simpleMessage("Atau"),
+        "textPassword": MessageLookupByLibrary.simpleMessage("Kata Sandi"),
         "textSkip": MessageLookupByLibrary.simpleMessage("Lewati"),
         "titleWalkthrough1": MessageLookupByLibrary.simpleMessage("Best Shop"),
         "titleWalkthrough2": MessageLookupByLibrary.simpleMessage("Aman"),

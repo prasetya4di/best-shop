@@ -9,5 +9,12 @@
   "descWalkthrough4": "Pay with any payment method you have, transfer bank, e-wallet, credit card, or paylater ? we accept all payment way.",
   "textNext": "Next",
   "textDone": "Done",
-  "textSkip": "Skip"
+  "textSkip": "Skip",
+  "textOr": "Or",
+  "textLogin": "Login",
+  "textSignUp": "Register",
+  "textEmail": "E-mail",
+  "textPassword": "Password",
+  "textEmptyEmail": "Please enter a valid email.",
+  "textEmptyPassword": "Please enter a valid password."
 }
