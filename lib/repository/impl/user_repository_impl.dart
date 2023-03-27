@@ -23,4 +23,7 @@ class UserRepositoryImpl implements UserRepository {
 
   @override
   User update(User user) => _userDao.update(user);
+
+  @override
+  bool isLoggedIn() => _userDao.isLoggedIn();
 }

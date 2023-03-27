@@ -10,4 +10,6 @@ abstract class UserDao {
   User update(User user);
 
   logout(User user);
+
+  bool isLoggedIn();
 }

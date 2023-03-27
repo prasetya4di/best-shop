@@ -52,4 +52,13 @@ class UserDaoImpl implements UserDao {
     _box.put(user);
     return user;
   }
+
+  @override
+  bool isLoggedIn() {
+    Query<User> query = _box.query(User_.isLoggedIn.equals(true)).build();
+    User? user = query.findFirst();
+    query.close();
+
+    return user != null;
+  }
 }

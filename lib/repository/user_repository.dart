@@ -10,4 +10,6 @@ abstract class UserRepository {
   User update(User user);
 
   logout(User user);
+
+  bool isLoggedIn();
 }
