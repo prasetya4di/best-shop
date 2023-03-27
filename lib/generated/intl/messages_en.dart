@@ -36,12 +36,15 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Please enter a valid email."),
         "textEmptyPassword": MessageLookupByLibrary.simpleMessage(
             "Please enter a valid password."),
+        "textLoading": MessageLookupByLibrary.simpleMessage("Loading ..."),
         "textLogin": MessageLookupByLibrary.simpleMessage("Login"),
         "textNext": MessageLookupByLibrary.simpleMessage("Next"),
         "textOr": MessageLookupByLibrary.simpleMessage("Or"),
         "textPassword": MessageLookupByLibrary.simpleMessage("Password"),
         "textSignUp": MessageLookupByLibrary.simpleMessage("Register"),
         "textSkip": MessageLookupByLibrary.simpleMessage("Skip"),
+        "textWrongPassword": MessageLookupByLibrary.simpleMessage(
+            "Your password/e-mail is incorrect, please try again"),
         "titleWalkthrough1": MessageLookupByLibrary.simpleMessage("Best Shop"),
         "titleWalkthrough2": MessageLookupByLibrary.simpleMessage("Safe"),
         "titleWalkthrough3":

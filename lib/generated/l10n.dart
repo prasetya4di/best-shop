@@ -230,6 +230,26 @@ class S {
       args: [],
     );
   }
+
+  /// `Your password/e-mail is incorrect, please try again`
+  String get textWrongPassword {
+    return Intl.message(
+      'Your password/e-mail is incorrect, please try again',
+      name: 'textWrongPassword',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Loading ...`
+  String get textLoading {
+    return Intl.message(
+      'Loading ...',
+      name: 'textLoading',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

@@ -36,11 +36,15 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("E-mail belum diisi."),
         "textEmptyPassword":
             MessageLookupByLibrary.simpleMessage("Password belum diisi."),
+        "textLoading": MessageLookupByLibrary.simpleMessage("Loading ..."),
         "textLogin": MessageLookupByLibrary.simpleMessage("Masuk"),
         "textNext": MessageLookupByLibrary.simpleMessage("Selanjutnya"),
         "textOr": MessageLookupByLibrary.simpleMessage("Atau"),
         "textPassword": MessageLookupByLibrary.simpleMessage("Kata Sandi"),
+        "textSignUp": MessageLookupByLibrary.simpleMessage("Daftar"),
         "textSkip": MessageLookupByLibrary.simpleMessage("Lewati"),
+        "textWrongPassword": MessageLookupByLibrary.simpleMessage(
+            "Password atau email yang anda masukkan salah, mohon coba lagi"),
         "titleWalkthrough1": MessageLookupByLibrary.simpleMessage("Best Shop"),
         "titleWalkthrough2": MessageLookupByLibrary.simpleMessage("Aman"),
         "titleWalkthrough3":

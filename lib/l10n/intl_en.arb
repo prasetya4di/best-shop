@@ -16,5 +16,7 @@
   "textEmail": "E-mail",
   "textPassword": "Password",
   "textEmptyEmail": "Please enter a valid email.",
-  "textEmptyPassword": "Please enter a valid password."
+  "textEmptyPassword": "Please enter a valid password.",
+  "textWrongPassword": "Your password/e-mail is incorrect, please try again",
+  "textLoading": "Loading ..."
 }

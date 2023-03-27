@@ -4,6 +4,8 @@ import 'package:go_router/go_router.dart';
 import 'package:my_marketplace/generated/l10n.dart';
 import 'package:my_marketplace/util/constants/font.dart';
 import 'package:my_marketplace/util/constants/routes.dart';
+import 'package:my_marketplace/view/login/login_screen.dart';
+import 'package:my_marketplace/view/login/viewmodel/login_viewmodel.dart';
 import 'package:my_marketplace/view/splash/splash_screen.dart';
 import 'package:my_marketplace/view/splash/viewmodel/splash_view_model.dart';
 import 'package:my_marketplace/view/walkthrough/viewmodel/walkthrough_viewmodel.dart';
@@ -26,7 +28,8 @@ class MyApp extends StatelessWidget {
     return MultiProvider(
       providers: [
         Provider(create: (context) => SplashViewModel(di.get(), di.get())),
-        Provider(create: (context) => WalkthroughViewModel(di.get()))
+        Provider(create: (context) => WalkthroughViewModel(di.get())),
+        ChangeNotifierProvider(create: (context) => LoginViewModel(di.get()))
       ],
       child: MaterialApp.router(
         title: 'Best Shop',
@@ -57,6 +60,6 @@ final _router = GoRouter(
         path: Routes.walkthrough,
         builder: (context, state) => const WalkthroughScreen()),
     GoRoute(
-        path: Routes.login, builder: (context, state) => const SplashScreen())
+        path: Routes.login, builder: (context, state) => const LoginScreen())
   ],
 );

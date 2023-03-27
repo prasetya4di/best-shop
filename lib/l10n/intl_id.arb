@@ -12,9 +12,11 @@
   "textSkip": "Lewati",
   "textOr": "Atau",
   "textLogin": "Masuk",
-  "textRegister": "Daftar",
+  "textSignUp": "Daftar",
   "textEmail": "E-mail",
   "textPassword": "Kata Sandi",
   "textEmptyEmail": "E-mail belum diisi.",
-  "textEmptyPassword": "Password belum diisi."
+  "textEmptyPassword": "Password belum diisi.",
+  "textWrongPassword": "Password atau email yang anda masukkan salah, mohon coba lagi",
+  "textLoading": "Loading ..."
 }
