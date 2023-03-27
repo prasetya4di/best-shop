@@ -116,7 +116,7 @@
     },
     {
       "id": "5:5525865543919054961",
-      "lastPropertyId": "7:2267622887649716655",
+      "lastPropertyId": "8:6449601447551773005",
       "name": "User",
       "properties": [
         {
@@ -154,6 +154,11 @@
           "id": "7:2267622887649716655",
           "name": "password",
           "type": 9
+        },
+        {
+          "id": "8:6449601447551773005",
+          "name": "isLoggedIn",
+          "type": 1
         }
       ],
       "relations": []

@@ -14,16 +14,17 @@ class User extends Equatable {
   DateTime birthDate;
   String password;
   bool isDoneOnBoarding;
+  bool isLoggedIn;
   @Backlink()
   final shoppingCarts = ToMany<ShoppingCart>();
   @Backlink()
   final orders = ToMany<UserOrder>();
 
   User(this.email, this.name, this.address, this.birthDate, this.password,
-      this.isDoneOnBoarding,
+      this.isDoneOnBoarding, this.isLoggedIn,
       {this.obxId = 0});
 
   @override
   List<Object?> get props =>
-      [email, name, address, birthDate, password, isDoneOnBoarding];
+      [email, name, address, birthDate, password, isDoneOnBoarding, isLoggedIn];
 }
