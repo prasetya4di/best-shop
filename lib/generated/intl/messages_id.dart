@@ -21,16 +21,18 @@ class MessageLookup extends MessageLookupByLibrary {
   String get localeName => 'id';
 
   final messages = _notInlinedMessages(_notInlinedMessages);
-
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
         "descWalkthrough1": MessageLookupByLibrary.simpleMessage(
-            "Best shop, the best application for your daily shopping need, we have almost everything here, and you can order from wherever you are"),
+            "Best shop, aplikasi terbaik untuk belanja kebutuhan harianmu, kita punya hampir semua yang kamu butuhkan di sini. dan kamu dapat memesan dari mana saja !"),
         "descWalkthrough2": MessageLookupByLibrary.simpleMessage(
-            "We care about your privacy, we secure every transaction, your data, and anything we have, we always encrypt it."),
+            "Kami sangat peduli dengan privasi, kami mengamankan semua transaksi kamu, data kamu, dan semua yang terdata di sini, kami selalu mengenkripsi semua data."),
         "descWalkthrough3": MessageLookupByLibrary.simpleMessage(
-            "Order today, arrive tomorrow, we receive your order today, and we proceed today."),
+            "Pesan hari ini, besok sampai, pesanan diterima dan diproses hari ini juga."),
         "descWalkthrough4": MessageLookupByLibrary.simpleMessage(
-            "Pay with any payment method you have, transfer bank, e-wallet, credit card, or paylater ? we accept all payment way."),
+            "Bayar dengan semua metode pembayaran yang kamu miliki, transfer bank, e-wallet, kartu kredit, atau paylater ? semua nya bisa digunakan di sini."),
+        "textDone": MessageLookupByLibrary.simpleMessage("Selesai"),
+        "textNext": MessageLookupByLibrary.simpleMessage("Selanjutnya"),
+        "textSkip": MessageLookupByLibrary.simpleMessage("Lewati"),
         "titleWalkthrough1": MessageLookupByLibrary.simpleMessage("Best Shop"),
         "titleWalkthrough2": MessageLookupByLibrary.simpleMessage("Aman"),
         "titleWalkthrough3":

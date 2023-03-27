@@ -130,6 +130,36 @@ class S {
       args: [],
     );
   }
+
+  /// `Next`
+  String get textNext {
+    return Intl.message(
+      'Next',
+      name: 'textNext',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Done`
+  String get textDone {
+    return Intl.message(
+      'Done',
+      name: 'textDone',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Skip`
+  String get textSkip {
+    return Intl.message(
+      'Skip',
+      name: 'textSkip',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {
@@ -144,10 +174,8 @@ class AppLocalizationDelegate extends LocalizationsDelegate<S> {
 
   @override
   bool isSupported(Locale locale) => _isSupported(locale);
-
   @override
   Future<S> load(Locale locale) => S.load(locale);
-
   @override
   bool shouldReload(AppLocalizationDelegate old) => false;
 

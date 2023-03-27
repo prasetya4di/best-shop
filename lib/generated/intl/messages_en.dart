@@ -21,7 +21,6 @@ class MessageLookup extends MessageLookupByLibrary {
   String get localeName => 'en';
 
   final messages = _notInlinedMessages(_notInlinedMessages);
-
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
         "descWalkthrough1": MessageLookupByLibrary.simpleMessage(
             "Best shop, the best application for your daily shopping need, we have almost everything here, and you can order from wherever you are"),
@@ -31,6 +30,9 @@ class MessageLookup extends MessageLookupByLibrary {
             "Order today, arrive tomorrow, we receive your order today, and we proceed today."),
         "descWalkthrough4": MessageLookupByLibrary.simpleMessage(
             "Pay with any payment method you have, transfer bank, e-wallet, credit card, or paylater ? we accept all payment way."),
+        "textDone": MessageLookupByLibrary.simpleMessage("Done"),
+        "textNext": MessageLookupByLibrary.simpleMessage("Next"),
+        "textSkip": MessageLookupByLibrary.simpleMessage("Skip"),
         "titleWalkthrough1": MessageLookupByLibrary.simpleMessage("Best Shop"),
         "titleWalkthrough2": MessageLookupByLibrary.simpleMessage("Safe"),
         "titleWalkthrough3":
