@@ -32,4 +32,9 @@ class OrderDetailDaoImpl implements OrderDetailDao {
   update(OrderDetail orderDetail) {
     _box.put(orderDetail);
   }
+
+  @override
+  inserts(List<OrderDetail> orderDetails) {
+    _box.putMany(orderDetails);
+  }
 }
