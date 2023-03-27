@@ -5,9 +5,9 @@ import 'package:objectbox/objectbox.dart';
 @Entity()
 class Category extends Equatable {
   @Id()
-  final int obxId;
+  int obxId;
   final String name;
-  @Backlink('product')
+  @Backlink()
   final products = ToMany<Product>();
 
   Category(this.name, {this.obxId = 0});

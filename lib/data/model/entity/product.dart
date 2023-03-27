@@ -5,13 +5,14 @@ import 'package:objectbox/objectbox.dart';
 @Entity()
 class Product extends Equatable {
   @Id()
-  final int obxId;
+  int obxId;
   final category = ToOne<Category>();
   final String name;
   final String description;
   final String imagePath;
   final double price;
   final int stock;
+  @Property(type: PropertyType.dateNano)
   final DateTime createdDate;
 
   Product(this.name, this.imagePath, this.price, this.stock, this.createdDate,

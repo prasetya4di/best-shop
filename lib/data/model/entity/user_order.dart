@@ -4,17 +4,19 @@ import 'package:my_marketplace/data/model/entity/user.dart';
 import 'package:objectbox/objectbox.dart';
 
 @Entity()
-class Order extends Equatable {
+class UserOrder extends Equatable {
   @Id()
-  final int obxId;
+  int obxId;
   final customer = ToOne<User>();
-  final int totalStock;
-  final double totalPrice;
-  final DateTime createdDate;
-  @Backlink('order_detail')
+  int totalStock;
+  double totalPrice;
+  @Property(type: PropertyType.dateNano)
+  DateTime createdDate;
+  @Backlink()
   final products = ToMany<OrderDetail>();
 
-  Order(this.totalStock, this.totalPrice, this.createdDate, {this.obxId = 0});
+  UserOrder(this.totalStock, this.totalPrice, this.createdDate,
+      {this.obxId = 0});
 
   @override
   List<Object?> get props =>

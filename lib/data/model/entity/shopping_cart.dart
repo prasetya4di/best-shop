@@ -6,11 +6,11 @@ import 'package:objectbox/objectbox.dart';
 @Entity()
 class ShoppingCart extends Equatable {
   @Id()
-  final int obxId;
+  int obxId;
   final customer = ToOne<User>();
   final products = ToOne<Product>();
-  final int totalStock;
-  final double totalPrice;
+  int totalStock;
+  double totalPrice;
 
   ShoppingCart(this.totalStock, this.totalPrice, {this.obxId = 0});
 
