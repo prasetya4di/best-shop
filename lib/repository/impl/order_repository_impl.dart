@@ -1,3 +1,4 @@
+import 'package:my_marketplace/data/model/entity/order_detail.dart';
 import 'package:my_marketplace/data/model/entity/user.dart';
 import 'package:my_marketplace/data/model/entity/user_order.dart';
 import 'package:my_marketplace/data/source/local/order_dao.dart';
@@ -14,17 +15,25 @@ class OrderRepositoryImpl implements OrderRepository {
   }
 
   @override
-  List<UserOrder> get(User user) {
-    return _orderDao.get(user);
-  }
-
-  @override
-  insert(UserOrder userOrder) {
-    _orderDao.insert(userOrder);
-  }
+  List<UserOrder> get(User user) => _orderDao.get(user);
 
   @override
   update(UserOrder userOrder) {
     _orderDao.update(userOrder);
+  }
+
+  @override
+  deleteProducts(UserOrder userOrder, OrderDetail orderDetail) {
+    _orderDao.deleteProducts(userOrder, orderDetail);
+  }
+
+  @override
+  insert(UserOrder userOrder, List<OrderDetail> orderDetails) {
+    _orderDao.insert(userOrder, orderDetails);
+  }
+
+  @override
+  updateProduct(UserOrder userOrder, OrderDetail orderDetail) {
+    _orderDao.updateProduct(userOrder, orderDetail);
   }
 }

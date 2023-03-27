@@ -14,9 +14,7 @@ class OrderDetailRepositoryImpl implements OrderDetailRepository {
   }
 
   @override
-  List<OrderDetail> get(UserOrder order) {
-    return _orderDetailDao.get(order);
-  }
+  List<OrderDetail> get(UserOrder order) => _orderDetailDao.get(order);
 
   @override
   insert(OrderDetail orderDetail) {

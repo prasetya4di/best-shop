@@ -9,19 +9,14 @@ class ProductRepositoryImpl implements ProductRepository {
   ProductRepositoryImpl(this._productDao);
 
   @override
-  List<Product> get() {
-    return _productDao.get();
-  }
+  List<Product> get() => _productDao.get();
 
   @override
-  List<Product> getByCategory(Category category) {
-    return _productDao.getByCategory(category);
-  }
+  List<Product> getByCategory(Category category) =>
+      _productDao.getByCategory(category);
 
   @override
-  Product? getById(int id) {
-    return _productDao.getById(id);
-  }
+  Product? getById(int id) => _productDao.getById(id);
 
   @override
   insert(Product product) {

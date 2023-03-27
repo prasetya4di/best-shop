@@ -8,14 +8,10 @@ class UserRepositoryImpl implements UserRepository {
   UserRepositoryImpl(this._userDao);
 
   @override
-  User get() {
-    return _userDao.get();
-  }
+  User get() => _userDao.get();
 
   @override
-  User? login(String email, String password) {
-    return _userDao.login(email, password);
-  }
+  User? login(String email, String password) => _userDao.login(email, password);
 
   @override
   logout(User user) {
@@ -23,12 +19,8 @@ class UserRepositoryImpl implements UserRepository {
   }
 
   @override
-  User? register(User newUser) {
-    return _userDao.register(newUser);
-  }
+  User? register(User newUser) => _userDao.register(newUser);
 
   @override
-  User update(User user) {
-    return _userDao.update(user);
-  }
+  User update(User user) => _userDao.update(user);
 }

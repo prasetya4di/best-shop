@@ -14,9 +14,7 @@ class ShoppingCartRepositoryImpl implements ShoppingCartRepository {
   }
 
   @override
-  List<ShoppingCart> get(User user) {
-    return _shoppingCartDao.get(user);
-  }
+  List<ShoppingCart> get(User user) => _shoppingCartDao.get(user);
 
   @override
   insert(ShoppingCart shoppingCart) {
