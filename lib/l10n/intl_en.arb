@@ -29,5 +29,6 @@
   "textIncorrectRepeatPassword": "Password does not match.",
   "textEmptyBirthday": "Please enter a valid birth-date",
   "textWrongPassword": "Your password/e-mail is incorrect, please try again",
+  "textFailedRegister": "E-mail is registered, please try another e-mail",
   "textLoading": "Loading ..."
 }

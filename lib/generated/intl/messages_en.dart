@@ -46,6 +46,8 @@ class MessageLookup extends MessageLookupByLibrary {
             "Please enter a valid password."),
         "textEmptyRepeatPassword": MessageLookupByLibrary.simpleMessage(
             "Please repeat your password."),
+        "textFailedRegister": MessageLookupByLibrary.simpleMessage(
+            "E-mail is registered, please try another e-mail"),
         "textIncorrectRepeatPassword":
             MessageLookupByLibrary.simpleMessage("Password does not match."),
         "textLoading": MessageLookupByLibrary.simpleMessage("Loading ..."),

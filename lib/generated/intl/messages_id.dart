@@ -46,6 +46,8 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Password belum diisi."),
         "textEmptyRepeatPassword":
             MessageLookupByLibrary.simpleMessage("Ulangi password anda."),
+        "textFailedRegister": MessageLookupByLibrary.simpleMessage(
+            "E-mail sudah terdaftar, mohon coba dengan e-mail yang lain"),
         "textIncorrectRepeatPassword":
             MessageLookupByLibrary.simpleMessage("Password tidak sesuai."),
         "textLoading": MessageLookupByLibrary.simpleMessage("Loading ..."),

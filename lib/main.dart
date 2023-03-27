@@ -7,6 +7,7 @@ import 'package:my_marketplace/util/constants/routes.dart';
 import 'package:my_marketplace/view/login/login_screen.dart';
 import 'package:my_marketplace/view/login/viewmodel/login_viewmodel.dart';
 import 'package:my_marketplace/view/register/register_screen.dart';
+import 'package:my_marketplace/view/register/viewmodel/register_viewmodel.dart';
 import 'package:my_marketplace/view/splash/splash_screen.dart';
 import 'package:my_marketplace/view/splash/viewmodel/splash_view_model.dart';
 import 'package:my_marketplace/view/walkthrough/viewmodel/walkthrough_viewmodel.dart';
@@ -30,7 +31,8 @@ class MyApp extends StatelessWidget {
       providers: [
         Provider(create: (context) => SplashViewModel(di.get(), di.get())),
         Provider(create: (context) => WalkthroughViewModel(di.get())),
-        ChangeNotifierProvider(create: (context) => LoginViewModel(di.get()))
+        ChangeNotifierProvider(create: (context) => LoginViewModel(di.get())),
+        ChangeNotifierProvider(create: (context) => RegisterViewModel(di.get()))
       ],
       child: MaterialApp.router(
         title: 'Best Shop',

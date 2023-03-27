@@ -351,6 +351,16 @@ class S {
     );
   }
 
+  /// `E-mail is registered, please try another e-mail`
+  String get textFailedRegister {
+    return Intl.message(
+      'E-mail is registered, please try another e-mail',
+      name: 'textFailedRegister',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `Loading ...`
   String get textLoading {
     return Intl.message(

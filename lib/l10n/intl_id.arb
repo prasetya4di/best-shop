@@ -29,5 +29,6 @@
   "textIncorrectRepeatPassword": "Password tidak sesuai.",
   "textEmptyBirthday": "Tanggal lahir belum diisi",
   "textWrongPassword": "Password atau email yang anda masukkan salah, mohon coba lagi",
+  "textFailedRegister": "E-mail sudah terdaftar, mohon coba dengan e-mail yang lain",
   "textLoading": "Loading ..."
 }

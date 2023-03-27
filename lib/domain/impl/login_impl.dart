@@ -8,6 +8,14 @@ class LoginImpl implements Login {
   LoginImpl(this._repository);
 
   @override
-  User? call(String email, String password) =>
-      _repository.login(email, password);
+  User? call(String email, String password) {
+    User? user = _repository.login(email, password);
+    if (user == null) {
+      return null;
+    } else {
+      user.isLoggedIn = true;
+      _repository.update(user);
+      return user;
+    }
+  }
 }
