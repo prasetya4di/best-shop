@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_marketplace/util/constants/font.dart';
 
 void main() {
   runApp(const MyApp());
@@ -23,6 +24,7 @@ class MyApp extends StatelessWidget {
         // Notice that the counter didn't reset back to zero; the application
         // is not restarted.
         primarySwatch: Colors.blue,
+        fontFamily: poppins,
       ),
       home: const MyHomePage(title: 'Flutter Demo Home Page'),
     );
