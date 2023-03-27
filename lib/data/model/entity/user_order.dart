@@ -12,13 +12,14 @@ class UserOrder extends Equatable {
   double totalPrice;
   @Property(type: PropertyType.dateNano)
   DateTime createdDate;
+  bool isPaid;
   @Backlink()
   final products = ToMany<OrderDetail>();
 
-  UserOrder(this.totalStock, this.totalPrice, this.createdDate,
+  UserOrder(this.totalStock, this.totalPrice, this.createdDate, this.isPaid,
       {this.obxId = 0});
 
   @override
   List<Object?> get props =>
-      [customer.targetId, totalStock, totalPrice, createdDate];
+      [customer.targetId, totalStock, totalPrice, createdDate, isPaid];
 }
