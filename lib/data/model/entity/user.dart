@@ -10,11 +10,13 @@ class User extends Equatable {
   final String address;
   final DateTime birthDate;
   final String _password;
+  final bool isDoneOnBoarding;
 
-  const User(
-      this.email, this.name, this.address, this.birthDate, this._password,
+  const User(this.email, this.name, this.address, this.birthDate,
+      this._password, this.isDoneOnBoarding,
       {this.obxId = 0});
 
   @override
-  List<Object?> get props => [email, name, address, birthDate, _password];
+  List<Object?> get props =>
+      [email, name, address, birthDate, _password, isDoneOnBoarding];
 }
