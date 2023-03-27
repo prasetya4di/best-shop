@@ -55,6 +55,8 @@ final _router = GoRouter(
     ),
     GoRoute(
         path: Routes.walkthrough,
-        builder: (context, state) => const WalkthroughScreen())
+        builder: (context, state) => const WalkthroughScreen()),
+    GoRoute(
+        path: Routes.login, builder: (context, state) => const SplashScreen())
   ],
 );
