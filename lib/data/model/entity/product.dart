@@ -8,15 +8,24 @@ class Product extends Equatable {
   final int obxId;
   final category = ToOne<Category>();
   final String name;
+  final String description;
   final String imagePath;
   final double price;
   final int stock;
   final DateTime createdDate;
 
   Product(this.name, this.imagePath, this.price, this.stock, this.createdDate,
+      this.description,
       {this.obxId = 0});
 
   @override
-  List<Object?> get props =>
-      [category.targetId, name, imagePath, price, stock, createdDate];
+  List<Object?> get props => [
+        category.targetId,
+        name,
+        description,
+        imagePath,
+        price,
+        stock,
+        createdDate
+      ];
 }
