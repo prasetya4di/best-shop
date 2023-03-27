@@ -30,17 +30,36 @@ class MessageLookup extends MessageLookupByLibrary {
             "Order today, arrive tomorrow, we receive your order today, and we proceed today."),
         "descWalkthrough4": MessageLookupByLibrary.simpleMessage(
             "Pay with any payment method you have, transfer bank, e-wallet, credit card, or paylater ? we accept all payment way."),
+        "textAddress": MessageLookupByLibrary.simpleMessage("Address"),
+        "textBirthday": MessageLookupByLibrary.simpleMessage("Birth-date"),
         "textDone": MessageLookupByLibrary.simpleMessage("Done"),
         "textEmail": MessageLookupByLibrary.simpleMessage("E-mail"),
+        "textEmptyAddress":
+            MessageLookupByLibrary.simpleMessage("Please enter your address"),
+        "textEmptyBirthday": MessageLookupByLibrary.simpleMessage(
+            "Please enter a valid birth-date"),
         "textEmptyEmail":
             MessageLookupByLibrary.simpleMessage("Please enter a valid email."),
+        "textEmptyName":
+            MessageLookupByLibrary.simpleMessage("Please enter your name"),
         "textEmptyPassword": MessageLookupByLibrary.simpleMessage(
             "Please enter a valid password."),
+        "textEmptyRepeatPassword": MessageLookupByLibrary.simpleMessage(
+            "Please repeat your password."),
+        "textIncorrectRepeatPassword":
+            MessageLookupByLibrary.simpleMessage("Password does not match."),
         "textLoading": MessageLookupByLibrary.simpleMessage("Loading ..."),
         "textLogin": MessageLookupByLibrary.simpleMessage("Login"),
+        "textName": MessageLookupByLibrary.simpleMessage("Name"),
         "textNext": MessageLookupByLibrary.simpleMessage("Next"),
         "textOr": MessageLookupByLibrary.simpleMessage("Or"),
         "textPassword": MessageLookupByLibrary.simpleMessage("Password"),
+        "textPasswordMinimum": MessageLookupByLibrary.simpleMessage(
+            "Please enter at least 8 characters"),
+        "textPasswordMustContain": MessageLookupByLibrary.simpleMessage(
+            "Password must contain at least one uppercase, \nlowercase, number, and a special character."),
+        "textRepeatPassword":
+            MessageLookupByLibrary.simpleMessage("Repeat Password"),
         "textSignUp": MessageLookupByLibrary.simpleMessage("Register"),
         "textSkip": MessageLookupByLibrary.simpleMessage("Skip"),
         "textWrongPassword": MessageLookupByLibrary.simpleMessage(

@@ -14,6 +14,7 @@ class UserFormField extends StatefulWidget {
   final TextInputType inputType;
   final Widget? suffix;
   final TextEditingController? controller;
+  final int maxLines;
 
   const UserFormField(
       {super.key,
@@ -26,7 +27,8 @@ class UserFormField extends StatefulWidget {
       this.controller,
       this.enabled = true,
       this.onTap,
-      this.onSave});
+      this.onSave,
+      this.maxLines = 1});
 
   @override
   State<UserFormField> createState() => _UserFormField();
@@ -41,6 +43,7 @@ class _UserFormField extends State<UserFormField> {
         Text(widget.label, style: Theme.of(context).textTheme.labelMedium),
         const SpaceVertical(),
         TextFormField(
+          maxLines: widget.maxLines,
           onSaved: widget.onSave,
           onTap: widget.onTap,
           controller: widget.controller,

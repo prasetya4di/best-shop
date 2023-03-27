@@ -201,11 +201,51 @@ class S {
     );
   }
 
+  /// `Name`
+  String get textName {
+    return Intl.message(
+      'Name',
+      name: 'textName',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Address`
+  String get textAddress {
+    return Intl.message(
+      'Address',
+      name: 'textAddress',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `Password`
   String get textPassword {
     return Intl.message(
       'Password',
       name: 'textPassword',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Repeat Password`
+  String get textRepeatPassword {
+    return Intl.message(
+      'Repeat Password',
+      name: 'textRepeatPassword',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Birth-date`
+  String get textBirthday {
+    return Intl.message(
+      'Birth-date',
+      name: 'textBirthday',
       desc: '',
       args: [],
     );
@@ -221,11 +261,81 @@ class S {
     );
   }
 
+  /// `Please enter your name`
+  String get textEmptyName {
+    return Intl.message(
+      'Please enter your name',
+      name: 'textEmptyName',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Please enter your address`
+  String get textEmptyAddress {
+    return Intl.message(
+      'Please enter your address',
+      name: 'textEmptyAddress',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `Please enter a valid password.`
   String get textEmptyPassword {
     return Intl.message(
       'Please enter a valid password.',
       name: 'textEmptyPassword',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Please enter at least 8 characters`
+  String get textPasswordMinimum {
+    return Intl.message(
+      'Please enter at least 8 characters',
+      name: 'textPasswordMinimum',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Password must contain at least one uppercase, \nlowercase, number, and a special character.`
+  String get textPasswordMustContain {
+    return Intl.message(
+      'Password must contain at least one uppercase, \nlowercase, number, and a special character.',
+      name: 'textPasswordMustContain',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Please repeat your password.`
+  String get textEmptyRepeatPassword {
+    return Intl.message(
+      'Please repeat your password.',
+      name: 'textEmptyRepeatPassword',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Password does not match.`
+  String get textIncorrectRepeatPassword {
+    return Intl.message(
+      'Password does not match.',
+      name: 'textIncorrectRepeatPassword',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Please enter a valid birth-date`
+  String get textEmptyBirthday {
+    return Intl.message(
+      'Please enter a valid birth-date',
+      name: 'textEmptyBirthday',
       desc: '',
       args: [],
     );

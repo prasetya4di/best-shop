@@ -6,6 +6,7 @@ import 'package:my_marketplace/util/constants/font.dart';
 import 'package:my_marketplace/util/constants/routes.dart';
 import 'package:my_marketplace/view/login/login_screen.dart';
 import 'package:my_marketplace/view/login/viewmodel/login_viewmodel.dart';
+import 'package:my_marketplace/view/register/register_screen.dart';
 import 'package:my_marketplace/view/splash/splash_screen.dart';
 import 'package:my_marketplace/view/splash/viewmodel/splash_view_model.dart';
 import 'package:my_marketplace/view/walkthrough/viewmodel/walkthrough_viewmodel.dart';
@@ -60,6 +61,9 @@ final _router = GoRouter(
         path: Routes.walkthrough,
         builder: (context, state) => const WalkthroughScreen()),
     GoRoute(
-        path: Routes.login, builder: (context, state) => const LoginScreen())
+        path: Routes.login, builder: (context, state) => const LoginScreen()),
+    GoRoute(
+        path: Routes.register,
+        builder: (context, state) => const RegisterScreen()),
   ],
 );

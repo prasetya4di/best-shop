@@ -30,17 +30,36 @@ class MessageLookup extends MessageLookupByLibrary {
             "Pesan hari ini, besok sampai, pesanan diterima dan diproses hari ini juga."),
         "descWalkthrough4": MessageLookupByLibrary.simpleMessage(
             "Bayar dengan semua metode pembayaran yang kamu miliki, transfer bank, e-wallet, kartu kredit, atau paylater ? semua nya bisa digunakan di sini."),
+        "textAddress": MessageLookupByLibrary.simpleMessage("Alamat"),
+        "textBirthday": MessageLookupByLibrary.simpleMessage("Tanggal Lahir"),
         "textDone": MessageLookupByLibrary.simpleMessage("Selesai"),
         "textEmail": MessageLookupByLibrary.simpleMessage("E-mail"),
+        "textEmptyAddress":
+            MessageLookupByLibrary.simpleMessage("Alamat belum diisi"),
+        "textEmptyBirthday":
+            MessageLookupByLibrary.simpleMessage("Tanggal lahir belum diisi"),
         "textEmptyEmail":
             MessageLookupByLibrary.simpleMessage("E-mail belum diisi."),
+        "textEmptyName":
+            MessageLookupByLibrary.simpleMessage("Nama belum diisi"),
         "textEmptyPassword":
             MessageLookupByLibrary.simpleMessage("Password belum diisi."),
+        "textEmptyRepeatPassword":
+            MessageLookupByLibrary.simpleMessage("Ulangi password anda."),
+        "textIncorrectRepeatPassword":
+            MessageLookupByLibrary.simpleMessage("Password tidak sesuai."),
         "textLoading": MessageLookupByLibrary.simpleMessage("Loading ..."),
         "textLogin": MessageLookupByLibrary.simpleMessage("Masuk"),
+        "textName": MessageLookupByLibrary.simpleMessage("Nama"),
         "textNext": MessageLookupByLibrary.simpleMessage("Selanjutnya"),
         "textOr": MessageLookupByLibrary.simpleMessage("Atau"),
         "textPassword": MessageLookupByLibrary.simpleMessage("Kata Sandi"),
+        "textPasswordMinimum": MessageLookupByLibrary.simpleMessage(
+            "Password harus lebih dari 8 karakter"),
+        "textPasswordMustContain": MessageLookupByLibrary.simpleMessage(
+            "Password harus mengandung setidaknya satu huruf besar, \n angka, dan karakter spesial."),
+        "textRepeatPassword":
+            MessageLookupByLibrary.simpleMessage("Ulangi Kata Sandi"),
         "textSignUp": MessageLookupByLibrary.simpleMessage("Daftar"),
         "textSkip": MessageLookupByLibrary.simpleMessage("Lewati"),
         "textWrongPassword": MessageLookupByLibrary.simpleMessage(
