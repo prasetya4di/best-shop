@@ -244,9 +244,28 @@
         }
       ],
       "relations": []
+    },
+    {
+      "id": "8:7680156814458254959",
+      "lastPropertyId": "2:3117405430091742090",
+      "name": "Walkthrough",
+      "properties": [
+        {
+          "id": "1:1605361821871121194",
+          "name": "obxId",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:3117405430091742090",
+          "name": "isFinished",
+          "type": 1
+        }
+      ],
+      "relations": []
     }
   ],
-  "lastEntityId": "7:7607127635151181684",
+  "lastEntityId": "8:7680156814458254959",
   "lastIndexId": "7:4569866529003787899",
   "lastRelationId": "0:0",
   "lastSequenceId": "0:0",
