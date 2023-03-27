@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:go_router/go_router.dart';
+import 'package:my_marketplace/generated/l10n.dart';
 import 'package:my_marketplace/util/constants/font.dart';
 import 'package:my_marketplace/util/constants/routes.dart';
 import 'package:my_marketplace/view/splash/splash_screen.dart';
@@ -31,6 +33,13 @@ class MyApp extends StatelessWidget {
           fontFamily: poppins,
         ),
         routerConfig: _router,
+        localizationsDelegates: const [
+          S.delegate,
+          GlobalMaterialLocalizations.delegate,
+          GlobalCupertinoLocalizations.delegate,
+          GlobalWidgetsLocalizations.delegate
+        ],
+        supportedLocales: S.delegate.supportedLocales,
       ),
     );
   }

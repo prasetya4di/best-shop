@@ -47,6 +47,9 @@ dependencies:
   go_router: ^6.5.0
   get_it: ^7.2.0
   introduction_screen: ^3.1.7
+  flutter_localizations:
+    sdk: flutter
+  intl: any
 
 dev_dependencies:
   flutter_test:
@@ -129,3 +132,5 @@ flutter_icons:
     image_path: "./assets/images/logo.png"
     background_color: "#00AEE3"
     theme_color: "#00AEE3"
+flutter_intl:
+  enabled: true
