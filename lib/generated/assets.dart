@@ -11,4 +11,8 @@ class Assets {
   static const String imagesLogoBlue = 'assets/images/logo-blue.svg';
   static const String imagesLogoIos = 'assets/images/logo-ios.png';
   static const String imagesLogoWhite = 'assets/images/logo-white.svg';
+  static const String imagesWalkthrough1 = 'assets/images/walkthrough_1.svg';
+  static const String imagesWalkthrough2 = 'assets/images/walkthrough_2.svg';
+  static const String imagesWalkthrough3 = 'assets/images/walkthrough_3.svg';
+  static const String imagesWalkthrough4 = 'assets/images/walkthrough_4.svg';
 }
