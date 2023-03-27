@@ -27,4 +27,12 @@ class ProductRepositoryImpl implements ProductRepository {
   inserts(List<Product> products) {
     _productDao.inserts(products);
   }
+
+  @override
+  List<Product> searchProduct(String keyword) =>
+      _productDao.searchProduct(keyword);
+
+  @override
+  List<Product> searchProductInCategory(String keyword, Category category) =>
+      _productDao.searchProductInCategory(keyword, category);
 }

@@ -11,4 +11,8 @@ abstract class ProductDao {
   List<Product> getByCategory(Category category);
 
   Product? getById(int id);
+
+  List<Product> searchProduct(String keyword);
+
+  List<Product> searchProductInCategory(String keyword, Category category);
 }

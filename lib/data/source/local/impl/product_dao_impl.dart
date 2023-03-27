@@ -37,4 +37,30 @@ class ProductDaoImpl implements ProductDao {
   inserts(List<Product> products) {
     _box.putMany(products);
   }
+
+  @override
+  List<Product> searchProduct(String keyword) {
+    Query<Product> query = _box
+        .query(Product_.name
+            .contains(keyword)
+            .or(Product_.description.contains(keyword)))
+        .build();
+    List<Product> products = query.find();
+    query.close();
+
+    return products;
+  }
+
+  @override
+  List<Product> searchProductInCategory(String keyword, Category category) {
+    Query<Product> query = _box
+        .query(Product_.category.equals(category.obxId).and(Product_.name
+            .contains(keyword)
+            .or(Product_.description.contains(keyword))))
+        .build();
+    List<Product> products = query.find();
+    query.close();
+
+    return products;
+  }
 }
