@@ -8,12 +8,12 @@ class OrderDetail extends Equatable {
   final int obxId;
   final order = ToOne<Order>();
   final product = ToOne<Product>();
-  final int totalStok;
+  final int totalStock;
   final double totalPrice;
 
-  OrderDetail(this.totalStok, this.totalPrice, {this.obxId = 0});
+  OrderDetail(this.totalStock, this.totalPrice, {this.obxId = 0});
 
   @override
   List<Object?> get props =>
-      [order.targetId, product.targetId, totalStok, totalPrice];
+      [order.targetId, product.targetId, totalStock, totalPrice];
 }

@@ -1,19 +1,20 @@
 import 'package:equatable/equatable.dart';
+import 'package:my_marketplace/data/model/entity/product.dart';
 import 'package:my_marketplace/data/model/entity/user.dart';
 import 'package:objectbox/objectbox.dart';
 
 @Entity()
-class Order extends Equatable {
+class ShoppingCart extends Equatable {
   @Id()
   final int obxId;
   final customer = ToOne<User>();
+  final products = ToOne<Product>();
   final int totalStock;
   final double totalPrice;
-  final DateTime createdDate;
 
-  Order(this.totalStock, this.totalPrice, this.createdDate, {this.obxId = 0});
+  ShoppingCart(this.totalStock, this.totalPrice, {this.obxId = 0});
 
   @override
   List<Object?> get props =>
-      [customer.targetId, totalStock, totalPrice, createdDate];
+      [customer.targetId, products.targetId, totalStock, totalPrice];
 }
