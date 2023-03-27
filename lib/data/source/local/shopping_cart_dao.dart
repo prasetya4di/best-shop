@@ -9,4 +9,6 @@ abstract class ShoppingCartDao {
   update(ShoppingCart shoppingCart);
 
   delete(int id);
+
+//Todo add function to count shopping cart total item
 }
