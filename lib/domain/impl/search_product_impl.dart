@@ -8,11 +8,7 @@ class SearchProductImpl implements SearchProduct {
   SearchProductImpl(this._repository);
 
   @override
-  call(String keyword, {Category? category}) {
-    if (category != null) {
-      return _repository.searchProductInCategory(keyword, category);
-    } else {
-      return _repository.searchProduct(keyword);
-    }
-  }
+  call(String keyword, {Category? category}) => category != null
+      ? _repository.searchProductInCategory(keyword, category)
+      : _repository.searchProduct(keyword);
 }
