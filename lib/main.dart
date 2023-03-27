@@ -6,6 +6,7 @@ import 'package:my_marketplace/util/constants/font.dart';
 import 'package:my_marketplace/util/constants/routes.dart';
 import 'package:my_marketplace/view/splash/splash_screen.dart';
 import 'package:my_marketplace/view/splash/viewmodel/splash_view_model.dart';
+import 'package:my_marketplace/view/walkthrough/viewmodel/walkthrough_viewmodel.dart';
 import 'package:my_marketplace/view/walkthrough/walkthrough_screen.dart';
 import 'package:provider/provider.dart';
 
@@ -24,7 +25,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MultiProvider(
       providers: [
-        Provider(create: (context) => SplashViewModel(di.get(), di.get()))
+        Provider(create: (context) => SplashViewModel(di.get(), di.get())),
+        Provider(create: (context) => WalkthroughViewModel(di.get()))
       ],
       child: MaterialApp.router(
         title: 'Best Shop',
