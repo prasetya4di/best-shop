@@ -38,5 +38,7 @@
   "textNo": "Tidak",
   "textConfirmation": "Konfirmasi",
   "textCategory": "Kategori",
-  "textProduct": "Produk"
+  "textProduct": "Produk",
+  "addToCart": "Tambahkan ke Keranjang",
+  "buyNow": "Beli Sekarang"
 }

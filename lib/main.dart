@@ -9,6 +9,7 @@ import 'package:my_marketplace/view/home/viewmodel/home_viewmodel.dart';
 import 'package:my_marketplace/view/login/login_screen.dart';
 import 'package:my_marketplace/view/login/viewmodel/login_viewmodel.dart';
 import 'package:my_marketplace/view/product_detail/product_detail_screen.dart';
+import 'package:my_marketplace/view/product_detail/viewmodel/product_detail_viewmodel.dart';
 import 'package:my_marketplace/view/profile/profile_screen.dart';
 import 'package:my_marketplace/view/profile/viewmodel/profile_viewmodel.dart';
 import 'package:my_marketplace/view/register/register_screen.dart';
@@ -43,7 +44,9 @@ class MyApp extends StatelessWidget {
         ChangeNotifierProvider(
             create: (context) => ProfileViewModel(di.get(), di.get())),
         ChangeNotifierProvider(
-            create: (context) => HomeViewModel(di.get(), di.get()))
+            create: (context) => HomeViewModel(di.get(), di.get())),
+        ChangeNotifierProvider(
+            create: (context) => ProductDetailViewModel(di.get()))
       ],
       child: MaterialApp.router(
         title: 'Best Shop',

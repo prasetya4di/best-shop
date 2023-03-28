@@ -38,5 +38,7 @@
   "textNo": "No",
   "textConfirmation": "Confirmation",
   "textCategory": "Category",
-  "textProduct": "Product"
+  "textProduct": "Product",
+  "addToCart": "Add to cart",
+  "buyNow": "Buy Now"
 }

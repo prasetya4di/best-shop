@@ -450,6 +450,26 @@ class S {
       args: [],
     );
   }
+
+  /// `Add to cart`
+  String get addToCart {
+    return Intl.message(
+      'Add to cart',
+      name: 'addToCart',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Buy Now`
+  String get buyNow {
+    return Intl.message(
+      'Buy Now',
+      name: 'buyNow',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {
