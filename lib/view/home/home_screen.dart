@@ -37,48 +37,46 @@ class _HomeScreenState extends State<HomeScreen> {
     HomeState state = context.watch<HomeViewModel>().state;
 
     return Scaffold(
-      body: SafeArea(
-        child: NestedScrollView(
-          headerSliverBuilder: (BuildContext context, bool innerBoxIsScrolled) {
-            return [
-              SliverPersistentHeader(
-                  delegate: HomeAppBar(170, _searchController, (value) {
-                    viewModel.searchProducts(value);
-                  }),
-                  pinned: true)
-            ];
-          },
-          body: CustomScrollView(
-            slivers: state is HomeProductsSearchedState
-                ? [
-              if (state.products.isNotEmpty)
-                SliverToBoxAdapter(
-                  child: ListProducts(products: state.products),
-                ),
-              if (state.products.isEmpty)
-                SliverList(
-                    delegate:
-                    SliverChildListDelegate([const EmptySearch()])),
-            ]
-                : [
-              SliverList(
-                  delegate: SliverChildListDelegate([
-                    ListCategory(
-                        categories:
-                        context.watch<HomeViewModel>().categories),
-                    const SpaceVertical(),
-                    Padding(
-                      padding: const EdgeInsets.only(top: 12.0, left: 12),
-                      child:
-                      TextTitle.medium(text: S.of(context).textProduct),
-                    ),
-                  ])),
+      body: NestedScrollView(
+        headerSliverBuilder: (BuildContext context, bool innerBoxIsScrolled) {
+          return [
+            SliverPersistentHeader(
+                delegate: HomeAppBar(230, _searchController, (value) {
+                  viewModel.searchProducts(value);
+                }),
+                pinned: true)
+          ];
+        },
+        body: CustomScrollView(
+          slivers: state is HomeProductsSearchedState
+              ? [
+            if (state.products.isNotEmpty)
               SliverToBoxAdapter(
-                child: ListProducts(
-                    products: context.watch<HomeViewModel>().products),
+                child: ListProducts(products: state.products),
               ),
-            ],
-          ),
+            if (state.products.isEmpty)
+              SliverList(
+                  delegate:
+                  SliverChildListDelegate([const EmptySearch()])),
+          ]
+              : [
+            SliverList(
+                delegate: SliverChildListDelegate([
+                  ListCategory(
+                      categories:
+                      context.watch<HomeViewModel>().categories),
+                  const SpaceVertical(),
+                  Padding(
+                    padding: const EdgeInsets.only(top: 12.0, left: 12),
+                    child:
+                    TextTitle.medium(text: S.of(context).textProduct),
+                  ),
+                ])),
+            SliverToBoxAdapter(
+              child: ListProducts(
+                  products: context.watch<HomeViewModel>().products),
+            ),
+          ],
         ),
       ),
     );

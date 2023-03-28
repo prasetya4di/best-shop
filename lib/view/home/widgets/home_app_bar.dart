@@ -24,6 +24,12 @@ class HomeAppBar extends SliverPersistentHeaderDelegate {
       children: [
         Column(
           children: [
+            SizedBox(
+              height: kToolbarHeight,
+              child: Container(
+                color: shrinkOffset < kToolbarHeight ? Colors.white : AssetColors.blue100,
+              ),
+            ),
             if (shrinkOffset < kToolbarHeight)
               Container(
                 color: Colors.green,
@@ -88,7 +94,7 @@ class HomeAppBar extends SliverPersistentHeaderDelegate {
   double get maxExtent => expandedHeight;
 
   @override
-  double get minExtent => kToolbarHeight + 16;
+  double get minExtent => kToolbarHeight * 2 + 16;
 
   @override
   bool shouldRebuild(covariant SliverPersistentHeaderDelegate oldDelegate) =>
