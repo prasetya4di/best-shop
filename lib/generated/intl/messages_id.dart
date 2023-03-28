@@ -32,6 +32,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "Bayar dengan semua metode pembayaran yang kamu miliki, transfer bank, e-wallet, kartu kredit, atau paylater ? semua nya bisa digunakan di sini."),
         "textAddress": MessageLookupByLibrary.simpleMessage("Alamat"),
         "textBirthday": MessageLookupByLibrary.simpleMessage("Tanggal Lahir"),
+        "textCategory": MessageLookupByLibrary.simpleMessage("Kategori"),
         "textConfirmation": MessageLookupByLibrary.simpleMessage("Konfirmasi"),
         "textDone": MessageLookupByLibrary.simpleMessage("Selesai"),
         "textEmail": MessageLookupByLibrary.simpleMessage("E-mail"),

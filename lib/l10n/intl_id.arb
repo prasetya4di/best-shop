@@ -36,5 +36,6 @@
   "textLogoutConfirmation": "Apakah anda yakin akan keluar dari akun ini ?",
   "textYes": "Ya",
   "textNo": "Tidak",
-  "textConfirmation": "Konfirmasi"
+  "textConfirmation": "Konfirmasi",
+  "textCategory": "Kategori"
 }

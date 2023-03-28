@@ -36,5 +36,6 @@
   "textLogoutConfirmation": "Are you sure you want to logout from this account ?",
   "textYes": "Yes",
   "textNo": "No",
-  "textConfirmation": "Confirmation"
+  "textConfirmation": "Confirmation",
+  "textCategory": "Category"
 }

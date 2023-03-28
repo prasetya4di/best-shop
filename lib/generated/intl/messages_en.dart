@@ -32,6 +32,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "Pay with any payment method you have, transfer bank, e-wallet, credit card, or paylater ? we accept all payment way."),
         "textAddress": MessageLookupByLibrary.simpleMessage("Address"),
         "textBirthday": MessageLookupByLibrary.simpleMessage("Birth-date"),
+        "textCategory": MessageLookupByLibrary.simpleMessage("Category"),
         "textConfirmation":
             MessageLookupByLibrary.simpleMessage("Confirmation"),
         "textDone": MessageLookupByLibrary.simpleMessage("Done"),
