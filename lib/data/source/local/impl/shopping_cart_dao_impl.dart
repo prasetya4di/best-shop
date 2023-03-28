@@ -48,7 +48,7 @@ class ShoppingCartDaoImpl implements ShoppingCartDao {
   ShoppingCart? getByProductId(Product product) {
     Query<ShoppingCart> query =
         _box.query(ShoppingCart_.product.equals(product.obxId)).build();
-    ShoppingCart shoppingCarts = query.find().first;
+    ShoppingCart? shoppingCarts = query.findFirst();
     query.close();
 
     return shoppingCarts;

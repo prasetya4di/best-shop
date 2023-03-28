@@ -23,6 +23,8 @@ class MessageLookup extends MessageLookupByLibrary {
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
         "addToCart": MessageLookupByLibrary.simpleMessage("Tambahkan"),
+        "addedToShoppingCart": MessageLookupByLibrary.simpleMessage(
+            "Produk telah ditambahkan ke keranjang belanja"),
         "buyNow": MessageLookupByLibrary.simpleMessage("Beli Sekarang"),
         "descWalkthrough1": MessageLookupByLibrary.simpleMessage(
             "Best shop, aplikasi terbaik untuk belanja kebutuhan harianmu, kita punya hampir semua yang kamu butuhkan di sini. dan kamu dapat memesan dari mana saja !"),
