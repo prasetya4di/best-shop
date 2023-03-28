@@ -490,6 +490,16 @@ class S {
       args: [],
     );
   }
+
+  /// `Shopping Cart`
+  String get shoppingCart {
+    return Intl.message(
+      'Shopping Cart',
+      name: 'shoppingCart',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

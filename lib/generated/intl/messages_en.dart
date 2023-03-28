@@ -36,6 +36,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "Pay with any payment method you have, transfer bank, e-wallet, credit card, or paylater ? we accept all payment way."),
         "emptySearch": MessageLookupByLibrary.simpleMessage(
             "Oooppss, the product you are looking for is currently unavailable. Please try again later, or try another keywords :)"),
+        "shoppingCart": MessageLookupByLibrary.simpleMessage("Shopping Cart"),
         "textAddress": MessageLookupByLibrary.simpleMessage("Address"),
         "textBirthday": MessageLookupByLibrary.simpleMessage("Birth-date"),
         "textCategory": MessageLookupByLibrary.simpleMessage("Category"),

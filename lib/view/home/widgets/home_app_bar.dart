@@ -54,7 +54,9 @@ class HomeAppBar extends SliverPersistentHeaderDelegate {
                         isLabelVisible: context
                             .watch<HomeViewModel>()
                             .isShoppingCartNotEmpty,
-                        child: appBarIcon(Assets.imagesIcShoppingCart, () {}),
+                        child: appBarIcon(Assets.imagesIcShoppingCart, () {
+                          context.push(Routes.shoppingCart);
+                        }),
                       ),
                       const SpaceHorizontal(),
                       appBarIcon(Assets.imagesIcUser, () {

@@ -32,6 +32,7 @@ import 'package:my_marketplace/domain/get_category_by_id.dart';
 import 'package:my_marketplace/domain/get_product_by_category.dart';
 import 'package:my_marketplace/domain/get_product_by_id.dart';
 import 'package:my_marketplace/domain/get_products.dart';
+import 'package:my_marketplace/domain/get_shopping_carts.dart';
 import 'package:my_marketplace/domain/get_user.dart';
 import 'package:my_marketplace/domain/impl/add_shopping_cart_impl.dart';
 import 'package:my_marketplace/domain/impl/check_login_impl.dart';
@@ -44,6 +45,7 @@ import 'package:my_marketplace/domain/impl/get_category_by_id_impl.dart';
 import 'package:my_marketplace/domain/impl/get_product_by_category_impl.dart';
 import 'package:my_marketplace/domain/impl/get_product_by_id_impl.dart';
 import 'package:my_marketplace/domain/impl/get_products_impl.dart';
+import 'package:my_marketplace/domain/impl/get_shopping_carts_impl.dart';
 import 'package:my_marketplace/domain/impl/get_user_impl.dart';
 import 'package:my_marketplace/domain/impl/initialize_products_impl.dart';
 import 'package:my_marketplace/domain/impl/login_impl.dart';
@@ -132,4 +134,6 @@ Future<void> setupDI() async {
   di.registerSingleton<DeleteShoppingCart>(DeleteShoppingCartImpl(di.get()));
   di.registerSingleton<CheckShoppingCartItem>(
       CheckShoppingCartItemImpl(di.get(), di.get()));
+  di.registerSingleton<GetShoppingCarts>(
+      GetShoppingCartsImpl(di.get(), di.get()));
 }
