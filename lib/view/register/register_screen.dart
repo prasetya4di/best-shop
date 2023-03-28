@@ -29,7 +29,6 @@ class _RegisterScreen extends State<RegisterScreen> {
   String _password = "";
   String _name = "";
   String _address = "";
-  String _nickname = "";
   DateTime _birthday = DateTime.now();
 
   late RegisterViewModel viewModel;

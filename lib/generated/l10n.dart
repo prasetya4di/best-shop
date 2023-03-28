@@ -201,6 +201,16 @@ class S {
     );
   }
 
+  /// `Search ...`
+  String get textSearch {
+    return Intl.message(
+      'Search ...',
+      name: 'textSearch',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `Name`
   String get textName {
     return Intl.message(

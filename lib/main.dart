@@ -4,6 +4,7 @@ import 'package:go_router/go_router.dart';
 import 'package:my_marketplace/generated/l10n.dart';
 import 'package:my_marketplace/util/constants/font.dart';
 import 'package:my_marketplace/util/constants/routes.dart';
+import 'package:my_marketplace/view/home/home_screen.dart';
 import 'package:my_marketplace/view/login/login_screen.dart';
 import 'package:my_marketplace/view/login/viewmodel/login_viewmodel.dart';
 import 'package:my_marketplace/view/register/register_screen.dart';
@@ -67,5 +68,6 @@ final _router = GoRouter(
     GoRoute(
         path: Routes.register,
         builder: (context, state) => const RegisterScreen()),
+    GoRoute(path: Routes.home, builder: (context, state) => HomeScreen()),
   ],
 );
