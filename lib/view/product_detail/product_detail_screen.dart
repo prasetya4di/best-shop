@@ -75,8 +75,9 @@ class _ProductDetailScreenState extends State<ProductDetailScreen> {
               child: OutlinedButton(
                 onPressed: () {
                   if (product != null) {
-                    viewModel.addToShoppingCart(product!);
+                    viewModel.addToShoppingCart(product);
                     ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+                        duration: const Duration(milliseconds: 500),
                         content: Text(S.of(context).addedToShoppingCart)));
                   }
                 },
