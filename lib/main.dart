@@ -5,6 +5,7 @@ import 'package:my_marketplace/generated/l10n.dart';
 import 'package:my_marketplace/util/constants/font.dart';
 import 'package:my_marketplace/util/constants/routes.dart';
 import 'package:my_marketplace/view/home/home_screen.dart';
+import 'package:my_marketplace/view/home/viewmodel/home_viewmodel.dart';
 import 'package:my_marketplace/view/login/login_screen.dart';
 import 'package:my_marketplace/view/login/viewmodel/login_viewmodel.dart';
 import 'package:my_marketplace/view/profile/profile_screen.dart';
@@ -32,13 +33,16 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MultiProvider(
       providers: [
-        Provider(create: (context) => SplashViewModel(di.get(), di.get())),
+        Provider(
+            create: (context) => SplashViewModel(di.get(), di.get(), di.get())),
         Provider(create: (context) => WalkthroughViewModel(di.get())),
         ChangeNotifierProvider(create: (context) => LoginViewModel(di.get())),
         ChangeNotifierProvider(
             create: (context) => RegisterViewModel(di.get())),
         ChangeNotifierProvider(
-            create: (context) => ProfileViewModel(di.get(), di.get()))
+            create: (context) => ProfileViewModel(di.get(), di.get())),
+        ChangeNotifierProvider(
+            create: (context) => HomeViewModel(di.get(), di.get()))
       ],
       child: MaterialApp.router(
         title: 'Best Shop',
