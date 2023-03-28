@@ -6,6 +6,6 @@ class WalkthroughViewModel {
   WalkthroughViewModel(this._updateWalkthroughStatus);
 
   updateWalkthroughStatus() {
-    _updateWalkthroughStatus.call(true);
+    _updateWalkthroughStatus(true);
   }
 }

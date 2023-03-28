@@ -20,7 +20,7 @@ class LoginViewModel extends ChangeNotifier {
     _loginState = LoginStateLoading();
     notifyListeners();
 
-    User? user = _login.call(email, password);
+    User? user = _login(email, password);
 
     if (user == null) {
       _loginState = LoginStateError();

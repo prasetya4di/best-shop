@@ -21,13 +21,13 @@ class ProfileViewModel extends ChangeNotifier {
     _state = ProfileLoadingState();
     notifyListeners();
 
-    _user = _getUser.call();
+    _user = _getUser();
     _state = ProfileSuccessState();
     notifyListeners();
   }
 
   logout() {
-    _logout.call(user!);
+    _logout(user!);
     _state = ProfileLogoutState();
     notifyListeners();
   }

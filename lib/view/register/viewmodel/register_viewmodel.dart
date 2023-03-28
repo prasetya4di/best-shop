@@ -18,8 +18,8 @@ class RegisterViewModel extends ChangeNotifier {
 
   register(String email, String name, String address, String password,
       DateTime birthDate) {
-    User? user = _register
-        .call(User(email, name, address, birthDate, password, false, true));
+    User? user =
+        _register(User(email, name, address, birthDate, password, false, true));
     if (user != null) {
       _registerState = RegisterStateSuccess();
     } else {
