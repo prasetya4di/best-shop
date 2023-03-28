@@ -1,3 +1,4 @@
+import 'package:my_marketplace/data/model/entity/product.dart';
 import 'package:my_marketplace/data/model/entity/shopping_cart.dart';
 import 'package:my_marketplace/data/model/entity/user.dart';
 import 'package:my_marketplace/data/source/local/shopping_cart_dao.dart';
@@ -25,4 +26,12 @@ class ShoppingCartRepositoryImpl implements ShoppingCartRepository {
   update(ShoppingCart shoppingCart) {
     return _shoppingCartDao.update(shoppingCart);
   }
+
+  @override
+  ShoppingCart? getByProductId(Product product) =>
+      _shoppingCartDao.getByProductId(product);
+
+  @override
+  bool checkShoppingCartItem(User user) =>
+      _shoppingCartDao.checkShoppingCartItem(user);
 }

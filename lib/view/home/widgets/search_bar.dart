@@ -13,6 +13,7 @@ class SearchBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return TextField(
+        autofocus: false,
         controller: filter,
         style: Theme.of(context).textTheme.bodyMedium,
         onChanged: onSearchChanged,

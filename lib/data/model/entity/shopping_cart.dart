@@ -8,7 +8,7 @@ class ShoppingCart extends Equatable {
   @Id()
   int obxId;
   final customer = ToOne<User>();
-  final products = ToOne<Product>();
+  final product = ToOne<Product>();
   int totalStock;
   double totalPrice;
 
@@ -16,5 +16,5 @@ class ShoppingCart extends Equatable {
 
   @override
   List<Object?> get props =>
-      [customer.targetId, products.targetId, totalStock, totalPrice];
+      [customer.targetId, product.targetId, totalStock, totalPrice];
 }

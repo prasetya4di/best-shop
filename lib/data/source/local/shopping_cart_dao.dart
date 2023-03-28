@@ -1,3 +1,4 @@
+import 'package:my_marketplace/data/model/entity/product.dart';
 import 'package:my_marketplace/data/model/entity/shopping_cart.dart';
 import 'package:my_marketplace/data/model/entity/user.dart';
 
@@ -6,9 +7,11 @@ abstract class ShoppingCartDao {
 
   List<ShoppingCart> get(User user);
 
+  ShoppingCart? getByProductId(Product product);
+
   update(ShoppingCart shoppingCart);
 
   delete(int id);
 
-//Todo add function to count shopping cart total item
+  bool checkShoppingCartItem(User user);
 }
