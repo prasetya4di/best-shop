@@ -10,22 +10,31 @@ import 'package:my_marketplace/view/widgets/space_vertical.dart';
 import 'package:my_marketplace/view/widgets/text_title.dart';
 import 'package:provider/provider.dart';
 
-class HomeScreen extends StatelessWidget {
-  HomeScreen({super.key});
+class HomeScreen extends StatefulWidget {
+  const HomeScreen({super.key});
 
+  @override
+  State<HomeScreen> createState() => _HomeScreenState();
+}
+
+class _HomeScreenState extends State<HomeScreen> {
   final TextEditingController _searchController = TextEditingController();
+
+  late HomeViewModel viewModel;
+
+  @override
+  void initState() {
+    super.initState();
+
+    viewModel = context.read();
+    WidgetsFlutterBinding.ensureInitialized().addPostFrameCallback((timeStamp) {
+      viewModel.getProducts();
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
-    HomeViewModel viewModel = context.read();
     HomeState state = context.watch<HomeViewModel>().state;
-    viewModel.init();
-
-    WidgetsFlutterBinding.ensureInitialized().addPostFrameCallback((_) {
-      if (state is HomeIdleState) {
-        viewModel.getProducts();
-      }
-    });
 
     return Scaffold(
       body: SafeArea(
@@ -42,33 +51,33 @@ class HomeScreen extends StatelessWidget {
           body: CustomScrollView(
             slivers: state is HomeProductsSearchedState
                 ? [
-                    if (state.products.isNotEmpty)
-                      SliverToBoxAdapter(
-                        child: ListProducts(products: state.products),
-                      ),
-                    if (state.products.isEmpty)
-                      SliverList(
-                          delegate:
-                              SliverChildListDelegate([const EmptySearch()])),
-                  ]
+              if (state.products.isNotEmpty)
+                SliverToBoxAdapter(
+                  child: ListProducts(products: state.products),
+                ),
+              if (state.products.isEmpty)
+                SliverList(
+                    delegate:
+                    SliverChildListDelegate([const EmptySearch()])),
+            ]
                 : [
-                    SliverList(
-                        delegate: SliverChildListDelegate([
-                      ListCategory(
-                          categories:
-                              context.watch<HomeViewModel>().categories),
-                      const SpaceVertical(),
-                      Padding(
-                        padding: const EdgeInsets.only(top: 12.0, left: 12),
-                        child:
-                            TextTitle.medium(text: S.of(context).textProduct),
-                      ),
-                    ])),
-                    SliverToBoxAdapter(
-                      child: ListProducts(
-                          products: context.watch<HomeViewModel>().products),
+              SliverList(
+                  delegate: SliverChildListDelegate([
+                    ListCategory(
+                        categories:
+                        context.watch<HomeViewModel>().categories),
+                    const SpaceVertical(),
+                    Padding(
+                      padding: const EdgeInsets.only(top: 12.0, left: 12),
+                      child:
+                      TextTitle.medium(text: S.of(context).textProduct),
                     ),
-                  ],
+                  ])),
+              SliverToBoxAdapter(
+                child: ListProducts(
+                    products: context.watch<HomeViewModel>().products),
+              ),
+            ],
           ),
         ),
       ),
