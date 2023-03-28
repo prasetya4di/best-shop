@@ -8,6 +8,7 @@ import 'package:my_marketplace/view/home/home_screen.dart';
 import 'package:my_marketplace/view/home/viewmodel/home_viewmodel.dart';
 import 'package:my_marketplace/view/login/login_screen.dart';
 import 'package:my_marketplace/view/login/viewmodel/login_viewmodel.dart';
+import 'package:my_marketplace/view/product_detail/product_detail_screen.dart';
 import 'package:my_marketplace/view/profile/profile_screen.dart';
 import 'package:my_marketplace/view/profile/viewmodel/profile_viewmodel.dart';
 import 'package:my_marketplace/view/register/register_screen.dart';
@@ -81,5 +82,9 @@ final _router = GoRouter(
     GoRoute(
         path: Routes.profile,
         builder: (context, state) => const ProfileScreen()),
+    GoRoute(
+        path: Routes.detailProduct,
+        builder: (context, state) => ProductDetailScreen(
+            productId: int.parse(state.params['productId'] ?? "0"))),
   ],
 );

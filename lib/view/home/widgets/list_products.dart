@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:my_marketplace/data/model/entity/product.dart';
+import 'package:my_marketplace/util/constants/routes.dart';
 import 'package:my_marketplace/view/widgets/asset_colors.dart';
 import 'package:my_marketplace/view/widgets/space_vertical.dart';
 import 'package:my_marketplace/view/widgets/text_title.dart';
@@ -25,7 +27,9 @@ class ListProducts extends StatelessWidget {
           var product = products[index];
 
           return InkWell(
-            onTap: () {},
+            onTap: () {
+              context.push("${Routes.product}/${product.obxId}");
+            },
             child: Card(
               child: Column(
                 children: [
