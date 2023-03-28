@@ -27,7 +27,6 @@ class ListProducts extends StatelessWidget {
           return InkWell(
             onTap: () {},
             child: Card(
-              elevation: 3,
               child: Column(
                 children: [
                   Image.asset(product.imagePath),

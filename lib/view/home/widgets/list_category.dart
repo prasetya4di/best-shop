@@ -31,7 +31,6 @@ class ListCategory extends StatelessWidget {
                   },
                   child: Card(
                     margin: const EdgeInsets.only(left: 12, bottom: 8),
-                    elevation: 3,
                     child: Container(
                         constraints: const BoxConstraints(minWidth: 105),
                         padding: const EdgeInsets.all(8.0),
