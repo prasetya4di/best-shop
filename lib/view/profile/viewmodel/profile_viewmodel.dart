@@ -17,6 +17,10 @@ class ProfileViewModel extends ChangeNotifier {
 
   ProfileState get state => _state;
 
+  init() {
+    _state = ProfileIdleState();
+  }
+
   getUser() {
     _state = ProfileLoadingState();
     notifyListeners();

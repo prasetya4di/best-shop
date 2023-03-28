@@ -27,7 +27,7 @@ class ShoppingCartItem extends StatelessWidget {
               TextTitle.large(
                   text: shoppingCart.product.target?.name ?? "", fontSize: 18),
               Text("Qty: ${shoppingCart.totalStock}"),
-              Text("\$${shoppingCart.totalPrice}"),
+              Text("\$${shoppingCart.totalPrice.toStringAsFixed(2)}"),
               ElevatedButton(
                   style: ButtonStyle(
                       backgroundColor:

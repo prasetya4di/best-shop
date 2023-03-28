@@ -11,15 +11,33 @@ import 'package:my_marketplace/view/profile/widgets/profile_info.dart';
 import 'package:my_marketplace/view/widgets/space_vertical.dart';
 import 'package:provider/provider.dart';
 
-class ProfileScreen extends StatelessWidget {
+class ProfileScreen extends StatefulWidget {
   const ProfileScreen({super.key});
+
+  @override
+  State<ProfileScreen> createState() => _ProfileScreenState();
+}
+
+class _ProfileScreenState extends State<ProfileScreen> {
+  late ProfileViewModel viewModel;
+
+  @override
+  void initState() {
+    super.initState();
+
+    viewModel = context.read();
+  }
+
+  @override
+  void dispose() {
+    super.dispose();
+    viewModel.init();
+  }
 
   @override
   Widget build(BuildContext context) {
     User? user = context.watch<ProfileViewModel>().user;
     ProfileState state = context.watch<ProfileViewModel>().state;
-
-    ProfileViewModel viewModel = context.read();
 
     WidgetsFlutterBinding.ensureInitialized().addPostFrameCallback((_) {
       if (state is ProfileLogoutState) {
