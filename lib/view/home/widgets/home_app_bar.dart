@@ -3,9 +3,11 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:go_router/go_router.dart';
 import 'package:my_marketplace/generated/assets.dart';
 import 'package:my_marketplace/util/constants/routes.dart';
+import 'package:my_marketplace/view/home/viewmodel/home_viewmodel.dart';
 import 'package:my_marketplace/view/home/widgets/search_bar.dart';
 import 'package:my_marketplace/view/widgets/asset_colors.dart';
 import 'package:my_marketplace/view/widgets/space_horizontal.dart';
+import 'package:provider/provider.dart';
 
 class HomeAppBar extends SliverPersistentHeaderDelegate {
   final double expandedHeight;
@@ -17,9 +19,6 @@ class HomeAppBar extends SliverPersistentHeaderDelegate {
   @override
   Widget build(
       BuildContext context, double shrinkOffset, bool overlapsContent) {
-    var defaultInputBorder = const OutlineInputBorder(
-        borderRadius: BorderRadius.all(Radius.circular(8)),
-        borderSide: BorderSide(color: AssetColors.gray100));
 
     return Stack(
       children: [
@@ -51,7 +50,12 @@ class HomeAppBar extends SliverPersistentHeaderDelegate {
                   ),
                   Row(
                     children: [
-                      appBarIcon(Assets.imagesIcShoppingCart, () {}),
+                      Badge(
+                        isLabelVisible: context
+                            .watch<HomeViewModel>()
+                            .isShoppingCartNotEmpty,
+                        child: appBarIcon(Assets.imagesIcShoppingCart, () {}),
+                      ),
                       const SpaceHorizontal(),
                       appBarIcon(Assets.imagesIcUser, () {
                         context.push(Routes.profile);
@@ -69,14 +73,8 @@ class HomeAppBar extends SliverPersistentHeaderDelegate {
           child: Container(
             padding: const EdgeInsets.all(12),
             width: shrinkOffset < 60
-                ? MediaQuery
-                .of(context)
-                .size
-                .width - shrinkOffset
-                : MediaQuery
-                .of(context)
-                .size
-                .width - 64,
+                ? MediaQuery.of(context).size.width - shrinkOffset
+                : MediaQuery.of(context).size.width - 64,
             child: SearchBar(filter: filter, onSearchChanged: onSearchChanged),
           ),
         ),
