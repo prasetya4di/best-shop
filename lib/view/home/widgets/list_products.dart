@@ -18,7 +18,7 @@ class ListProducts extends StatelessWidget {
         primary: false,
         physics: const NeverScrollableScrollPhysics(),
         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-          childAspectRatio: 0.7,
+          childAspectRatio: 0.65,
           crossAxisCount: 2,
         ),
         padding: const EdgeInsets.symmetric(horizontal: 8),

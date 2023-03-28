@@ -15,7 +15,7 @@ class ListProducts extends StatelessWidget {
   Widget build(BuildContext context) {
     return GridView.builder(
         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-          childAspectRatio: 0.7,
+          childAspectRatio: 0.65,
           crossAxisCount: 2,
         ),
         padding: const EdgeInsets.symmetric(horizontal: 8),
