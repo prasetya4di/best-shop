@@ -10,6 +10,8 @@ import 'package:my_marketplace/view/login/login_screen.dart';
 import 'package:my_marketplace/view/login/viewmodel/login_viewmodel.dart';
 import 'package:my_marketplace/view/product_detail/product_detail_screen.dart';
 import 'package:my_marketplace/view/product_detail/viewmodel/product_detail_viewmodel.dart';
+import 'package:my_marketplace/view/product_per_category/product_per_category_screen.dart';
+import 'package:my_marketplace/view/product_per_category/viewmodel/product_per_category_viewmodel.dart';
 import 'package:my_marketplace/view/profile/profile_screen.dart';
 import 'package:my_marketplace/view/profile/viewmodel/profile_viewmodel.dart';
 import 'package:my_marketplace/view/register/register_screen.dart';
@@ -46,7 +48,10 @@ class MyApp extends StatelessWidget {
         ChangeNotifierProvider(
             create: (context) => HomeViewModel(di.get(), di.get())),
         ChangeNotifierProvider(
-            create: (context) => ProductDetailViewModel(di.get()))
+            create: (context) => ProductDetailViewModel(di.get())),
+        ChangeNotifierProvider(
+            create: (context) =>
+                ProductPerCategoryViewModel(di.get(), di.get())),
       ],
       child: MaterialApp.router(
         title: 'Best Shop',
@@ -89,5 +94,9 @@ final _router = GoRouter(
         path: Routes.detailProduct,
         builder: (context, state) => ProductDetailScreen(
             productId: int.parse(state.params['productId'] ?? "0"))),
+    GoRoute(
+        path: Routes.detailCategory,
+        builder: (context, state) => ProductPerCategoryScreen(
+            categoryId: int.parse(state.params['categoryId'] ?? "0"))),
   ],
 );

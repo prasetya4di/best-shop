@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:my_marketplace/data/model/entity/category.dart';
 import 'package:my_marketplace/generated/l10n.dart';
+import 'package:my_marketplace/util/constants/routes.dart';
 import 'package:my_marketplace/view/widgets/text_title.dart';
 
 class ListCategory extends StatelessWidget {
@@ -14,8 +16,10 @@ class ListCategory extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Padding(
-          padding: const EdgeInsets.all(12.0),
-          child: TextTitle.medium(text: S.of(context).textCategory),
+          padding: const EdgeInsets.only(left: 12, top: 12, bottom: 4),
+          child: TextTitle.medium(text: S
+              .of(context)
+              .textCategory),
         ),
         SizedBox(
           height: 105,
@@ -27,7 +31,7 @@ class ListCategory extends StatelessWidget {
 
                 return InkWell(
                   onTap: () {
-                    //Todo navigate to list item with category
+                    context.push("${Routes.category}/${category.obxId}");
                   },
                   child: Card(
                     margin: const EdgeInsets.only(left: 12, bottom: 8),
