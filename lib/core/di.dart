@@ -37,11 +37,13 @@ import 'package:my_marketplace/domain/impl/get_product_by_category_impl.dart';
 import 'package:my_marketplace/domain/impl/get_product_by_id_impl.dart';
 import 'package:my_marketplace/domain/impl/get_products_impl.dart';
 import 'package:my_marketplace/domain/impl/get_user_impl.dart';
+import 'package:my_marketplace/domain/impl/initialize_products_impl.dart';
 import 'package:my_marketplace/domain/impl/login_impl.dart';
 import 'package:my_marketplace/domain/impl/logout_impl.dart';
 import 'package:my_marketplace/domain/impl/register_impl.dart';
 import 'package:my_marketplace/domain/impl/search_product_impl.dart';
 import 'package:my_marketplace/domain/impl/update_walkthrough_status_impl.dart';
+import 'package:my_marketplace/domain/initialize_products.dart';
 import 'package:my_marketplace/domain/login.dart';
 import 'package:my_marketplace/domain/logout.dart';
 import 'package:my_marketplace/domain/register.dart';
@@ -115,4 +117,5 @@ Future<void> setupDI() async {
   di.registerSingleton<UpdateWalkthroughStatus>(
       UpdateWalkthroughStatusImpl(di.get()));
   di.registerSingleton<Logout>(LogoutImpl(di.get()));
+  di.registerSingleton<InitializeProducts>(InitializeProductsImpl(di.get()));
 }

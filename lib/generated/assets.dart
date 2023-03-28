@@ -17,6 +17,16 @@ class Assets {
   static const String imagesLogoBlue = 'assets/images/logo-blue.svg';
   static const String imagesLogoIos = 'assets/images/logo-ios.png';
   static const String imagesLogoWhite = 'assets/images/logo-white.svg';
+  static const String imagesProduct1 = 'assets/images/product_1.jpg';
+  static const String imagesProduct10 = 'assets/images/product_10.jpg';
+  static const String imagesProduct2 = 'assets/images/product_2.jpg';
+  static const String imagesProduct3 = 'assets/images/product_3.jpg';
+  static const String imagesProduct4 = 'assets/images/product_4.jpg';
+  static const String imagesProduct5 = 'assets/images/product_5.jpg';
+  static const String imagesProduct6 = 'assets/images/product_6.jpg';
+  static const String imagesProduct7 = 'assets/images/product_7.jpg';
+  static const String imagesProduct8 = 'assets/images/product_8.jpg';
+  static const String imagesProduct9 = 'assets/images/product_9.jpg';
   static const String imagesWalkthrough1 = 'assets/images/walkthrough_1.svg';
   static const String imagesWalkthrough2 = 'assets/images/walkthrough_2.svg';
   static const String imagesWalkthrough3 = 'assets/images/walkthrough_3.svg';

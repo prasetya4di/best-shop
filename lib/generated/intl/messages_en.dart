@@ -45,40 +45,40 @@ class MessageLookup extends MessageLookupByLibrary {
         "textEmptyName":
             MessageLookupByLibrary.simpleMessage("Please enter your name"),
         "textEmptyPassword": MessageLookupByLibrary.simpleMessage(
-        "Please enter a valid password."),
-    "textEmptyRepeatPassword": MessageLookupByLibrary.simpleMessage(
-        "Please repeat your password."),
-    "textFailedRegister": MessageLookupByLibrary.simpleMessage(
-        "E-mail is registered, please try another e-mail"),
-    "textIncorrectRepeatPassword":
-    MessageLookupByLibrary.simpleMessage("Password does not match."),
-    "textLoading": MessageLookupByLibrary.simpleMessage("Loading ..."),
-    "textLogin": MessageLookupByLibrary.simpleMessage("Login"),
-    "textLogout": MessageLookupByLibrary.simpleMessage("Logout"),
-    "textLogoutConfirmation": MessageLookupByLibrary.simpleMessage(
-        "Are you sure you want to logout from this account ?"),
-    "textName": MessageLookupByLibrary.simpleMessage("Name"),
-    "textNext": MessageLookupByLibrary.simpleMessage("Next"),
-    "textNo": MessageLookupByLibrary.simpleMessage("No"),
-    "textOr": MessageLookupByLibrary.simpleMessage("Or"),
-    "textPassword": MessageLookupByLibrary.simpleMessage("Password"),
-    "textPasswordMinimum": MessageLookupByLibrary.simpleMessage(
-        "Please enter at least 8 characters"),
-    "textPasswordMustContain": MessageLookupByLibrary.simpleMessage(
-        "Password must contain at least one uppercase, \nlowercase, number, and a special character."),
-    "textRepeatPassword":
-    MessageLookupByLibrary.simpleMessage("Repeat Password"),
-    "textSearch": MessageLookupByLibrary.simpleMessage("Search ..."),
-    "textSignUp": MessageLookupByLibrary.simpleMessage("Register"),
-    "textSkip": MessageLookupByLibrary.simpleMessage("Skip"),
-    "textWrongPassword": MessageLookupByLibrary.simpleMessage(
-        "Your password/e-mail is incorrect, please try again"),
-    "textYes": MessageLookupByLibrary.simpleMessage("Yes"),
-    "titleWalkthrough1": MessageLookupByLibrary.simpleMessage("Best Shop"),
-    "titleWalkthrough2": MessageLookupByLibrary.simpleMessage("Safe"),
-    "titleWalkthrough3":
-    MessageLookupByLibrary.simpleMessage("Fast Delivery"),
-    "titleWalkthrough4":
-    MessageLookupByLibrary.simpleMessage("Easy Payment")
-  };
+            "Please enter a valid password."),
+        "textEmptyRepeatPassword": MessageLookupByLibrary.simpleMessage(
+            "Please repeat your password."),
+        "textFailedRegister": MessageLookupByLibrary.simpleMessage(
+            "E-mail is registered, please try another e-mail"),
+        "textIncorrectRepeatPassword":
+            MessageLookupByLibrary.simpleMessage("Password does not match."),
+        "textLoading": MessageLookupByLibrary.simpleMessage("Loading ..."),
+        "textLogin": MessageLookupByLibrary.simpleMessage("Login"),
+        "textLogout": MessageLookupByLibrary.simpleMessage("Logout"),
+        "textLogoutConfirmation": MessageLookupByLibrary.simpleMessage(
+            "Are you sure you want to logout from this account ?"),
+        "textName": MessageLookupByLibrary.simpleMessage("Name"),
+        "textNext": MessageLookupByLibrary.simpleMessage("Next"),
+        "textNo": MessageLookupByLibrary.simpleMessage("No"),
+        "textOr": MessageLookupByLibrary.simpleMessage("Or"),
+        "textPassword": MessageLookupByLibrary.simpleMessage("Password"),
+        "textPasswordMinimum": MessageLookupByLibrary.simpleMessage(
+            "Please enter at least 8 characters"),
+        "textPasswordMustContain": MessageLookupByLibrary.simpleMessage(
+            "Password must contain at least one uppercase, \nlowercase, number, and a special character."),
+        "textRepeatPassword":
+            MessageLookupByLibrary.simpleMessage("Repeat Password"),
+        "textSearch": MessageLookupByLibrary.simpleMessage("Search ..."),
+        "textSignUp": MessageLookupByLibrary.simpleMessage("Register"),
+        "textSkip": MessageLookupByLibrary.simpleMessage("Skip"),
+        "textWrongPassword": MessageLookupByLibrary.simpleMessage(
+            "Your password/e-mail is incorrect, please try again"),
+        "textYes": MessageLookupByLibrary.simpleMessage("Yes"),
+        "titleWalkthrough1": MessageLookupByLibrary.simpleMessage("Best Shop"),
+        "titleWalkthrough2": MessageLookupByLibrary.simpleMessage("Safe"),
+        "titleWalkthrough3":
+            MessageLookupByLibrary.simpleMessage("Fast Delivery"),
+        "titleWalkthrough4":
+            MessageLookupByLibrary.simpleMessage("Easy Payment")
+      };
 }
