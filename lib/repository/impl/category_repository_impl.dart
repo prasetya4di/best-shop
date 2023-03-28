@@ -19,4 +19,9 @@ class CategoryRepositoryImpl implements CategoryRepository {
   inserts(List<Category> categories) {
     _categoryDao.inserts(categories);
   }
+
+  @override
+  clear() {
+    _categoryDao.clear();
+  }
 }

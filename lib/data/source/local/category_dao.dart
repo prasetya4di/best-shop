@@ -6,4 +6,6 @@ abstract class CategoryDao {
   inserts(List<Category> categories);
 
   List<Category> get();
+
+  clear();
 }

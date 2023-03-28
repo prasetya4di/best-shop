@@ -29,7 +29,7 @@ class InitializeProductsImpl implements InitializeProducts {
   }
 
   Category generateCategoryWithProducts(String name) {
-    Category category = Category("Electronic");
+    Category category = Category(name);
     List<Product> productCategory = generateRandomProducts(category);
     category.products.addAll(productCategory);
     return category;

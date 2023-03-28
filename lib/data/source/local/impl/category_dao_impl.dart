@@ -21,4 +21,9 @@ class CategoryDaoImpl implements CategoryDao {
   inserts(List<Category> categories) {
     _box.putMany(categories);
   }
+
+  @override
+  clear() {
+    _box.removeAll();
+  }
 }
