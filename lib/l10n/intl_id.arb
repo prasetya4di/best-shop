@@ -31,5 +31,10 @@
   "textEmptyBirthday": "Tanggal lahir belum diisi",
   "textWrongPassword": "Password atau email yang anda masukkan salah, mohon coba lagi",
   "textFailedRegister": "E-mail sudah terdaftar, mohon coba dengan e-mail yang lain",
-  "textLoading": "Loading ..."
+  "textLoading": "Loading ...",
+  "textLogout": "Keluar",
+  "textLogoutConfirmation": "Apakah anda yakin akan keluar dari akun ini ?",
+  "textYes": "Ya",
+  "textNo": "Tidak",
+  "textConfirmation": "Konfirmasi"
 }

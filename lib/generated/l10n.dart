@@ -380,6 +380,56 @@ class S {
       args: [],
     );
   }
+
+  /// `Logout`
+  String get textLogout {
+    return Intl.message(
+      'Logout',
+      name: 'textLogout',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Are you sure you want to logout from this account ?`
+  String get textLogoutConfirmation {
+    return Intl.message(
+      'Are you sure you want to logout from this account ?',
+      name: 'textLogoutConfirmation',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Yes`
+  String get textYes {
+    return Intl.message(
+      'Yes',
+      name: 'textYes',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `No`
+  String get textNo {
+    return Intl.message(
+      'No',
+      name: 'textNo',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Confirmation`
+  String get textConfirmation {
+    return Intl.message(
+      'Confirmation',
+      name: 'textConfirmation',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

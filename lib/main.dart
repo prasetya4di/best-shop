@@ -7,6 +7,8 @@ import 'package:my_marketplace/util/constants/routes.dart';
 import 'package:my_marketplace/view/home/home_screen.dart';
 import 'package:my_marketplace/view/login/login_screen.dart';
 import 'package:my_marketplace/view/login/viewmodel/login_viewmodel.dart';
+import 'package:my_marketplace/view/profile/profile_screen.dart';
+import 'package:my_marketplace/view/profile/viewmodel/profile_viewmodel.dart';
 import 'package:my_marketplace/view/register/register_screen.dart';
 import 'package:my_marketplace/view/register/viewmodel/register_viewmodel.dart';
 import 'package:my_marketplace/view/splash/splash_screen.dart';
@@ -33,7 +35,10 @@ class MyApp extends StatelessWidget {
         Provider(create: (context) => SplashViewModel(di.get(), di.get())),
         Provider(create: (context) => WalkthroughViewModel(di.get())),
         ChangeNotifierProvider(create: (context) => LoginViewModel(di.get())),
-        ChangeNotifierProvider(create: (context) => RegisterViewModel(di.get()))
+        ChangeNotifierProvider(
+            create: (context) => RegisterViewModel(di.get())),
+        ChangeNotifierProvider(
+            create: (context) => ProfileViewModel(di.get(), di.get()))
       ],
       child: MaterialApp.router(
         title: 'Best Shop',
@@ -69,5 +74,6 @@ final _router = GoRouter(
         path: Routes.register,
         builder: (context, state) => const RegisterScreen()),
     GoRoute(path: Routes.home, builder: (context, state) => HomeScreen()),
+    GoRoute(path: Routes.profile, builder: (context, state) => ProfileScreen()),
   ],
 );

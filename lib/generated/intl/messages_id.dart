@@ -32,6 +32,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "Bayar dengan semua metode pembayaran yang kamu miliki, transfer bank, e-wallet, kartu kredit, atau paylater ? semua nya bisa digunakan di sini."),
         "textAddress": MessageLookupByLibrary.simpleMessage("Alamat"),
         "textBirthday": MessageLookupByLibrary.simpleMessage("Tanggal Lahir"),
+        "textConfirmation": MessageLookupByLibrary.simpleMessage("Konfirmasi"),
         "textDone": MessageLookupByLibrary.simpleMessage("Selesai"),
         "textEmail": MessageLookupByLibrary.simpleMessage("E-mail"),
         "textEmptyAddress":
@@ -43,35 +44,40 @@ class MessageLookup extends MessageLookupByLibrary {
         "textEmptyName":
             MessageLookupByLibrary.simpleMessage("Nama belum diisi"),
         "textEmptyPassword":
-            MessageLookupByLibrary.simpleMessage("Password belum diisi."),
-        "textEmptyRepeatPassword":
-            MessageLookupByLibrary.simpleMessage("Ulangi password anda."),
-        "textFailedRegister": MessageLookupByLibrary.simpleMessage(
-            "E-mail sudah terdaftar, mohon coba dengan e-mail yang lain"),
-        "textIncorrectRepeatPassword":
-            MessageLookupByLibrary.simpleMessage("Password tidak sesuai."),
-        "textLoading": MessageLookupByLibrary.simpleMessage("Loading ..."),
-        "textLogin": MessageLookupByLibrary.simpleMessage("Masuk"),
-        "textName": MessageLookupByLibrary.simpleMessage("Nama"),
-        "textNext": MessageLookupByLibrary.simpleMessage("Selanjutnya"),
-        "textOr": MessageLookupByLibrary.simpleMessage("Atau"),
-        "textPassword": MessageLookupByLibrary.simpleMessage("Kata Sandi"),
-        "textPasswordMinimum": MessageLookupByLibrary.simpleMessage(
-            "Password harus lebih dari 8 karakter"),
-        "textPasswordMustContain": MessageLookupByLibrary.simpleMessage(
-            "Password harus mengandung setidaknya satu huruf besar, \n angka, dan karakter spesial."),
-        "textRepeatPassword":
-            MessageLookupByLibrary.simpleMessage("Ulangi Kata Sandi"),
-        "textSearch": MessageLookupByLibrary.simpleMessage("Cari Barang ..."),
-        "textSignUp": MessageLookupByLibrary.simpleMessage("Daftar"),
-        "textSkip": MessageLookupByLibrary.simpleMessage("Lewati"),
-        "textWrongPassword": MessageLookupByLibrary.simpleMessage(
-            "Password atau email yang anda masukkan salah, mohon coba lagi"),
-        "titleWalkthrough1": MessageLookupByLibrary.simpleMessage("Best Shop"),
-        "titleWalkthrough2": MessageLookupByLibrary.simpleMessage("Aman"),
-        "titleWalkthrough3":
-            MessageLookupByLibrary.simpleMessage("Pengiriman Cepat"),
-        "titleWalkthrough4":
-            MessageLookupByLibrary.simpleMessage("Pembayaran Mudah")
-      };
+    MessageLookupByLibrary.simpleMessage("Password belum diisi."),
+    "textEmptyRepeatPassword":
+    MessageLookupByLibrary.simpleMessage("Ulangi password anda."),
+    "textFailedRegister": MessageLookupByLibrary.simpleMessage(
+        "E-mail sudah terdaftar, mohon coba dengan e-mail yang lain"),
+    "textIncorrectRepeatPassword":
+    MessageLookupByLibrary.simpleMessage("Password tidak sesuai."),
+    "textLoading": MessageLookupByLibrary.simpleMessage("Loading ..."),
+    "textLogin": MessageLookupByLibrary.simpleMessage("Masuk"),
+    "textLogout": MessageLookupByLibrary.simpleMessage("Keluar"),
+    "textLogoutConfirmation": MessageLookupByLibrary.simpleMessage(
+        "Apakah anda yakin akan keluar dari akun ini ?"),
+    "textName": MessageLookupByLibrary.simpleMessage("Nama"),
+    "textNext": MessageLookupByLibrary.simpleMessage("Selanjutnya"),
+    "textNo": MessageLookupByLibrary.simpleMessage("Tidak"),
+    "textOr": MessageLookupByLibrary.simpleMessage("Atau"),
+    "textPassword": MessageLookupByLibrary.simpleMessage("Kata Sandi"),
+    "textPasswordMinimum": MessageLookupByLibrary.simpleMessage(
+        "Password harus lebih dari 8 karakter"),
+    "textPasswordMustContain": MessageLookupByLibrary.simpleMessage(
+        "Password harus mengandung setidaknya satu huruf besar, \n angka, dan karakter spesial."),
+    "textRepeatPassword":
+    MessageLookupByLibrary.simpleMessage("Ulangi Kata Sandi"),
+    "textSearch": MessageLookupByLibrary.simpleMessage("Cari Barang ..."),
+    "textSignUp": MessageLookupByLibrary.simpleMessage("Daftar"),
+    "textSkip": MessageLookupByLibrary.simpleMessage("Lewati"),
+    "textWrongPassword": MessageLookupByLibrary.simpleMessage(
+        "Password atau email yang anda masukkan salah, mohon coba lagi"),
+    "textYes": MessageLookupByLibrary.simpleMessage("Ya"),
+    "titleWalkthrough1": MessageLookupByLibrary.simpleMessage("Best Shop"),
+    "titleWalkthrough2": MessageLookupByLibrary.simpleMessage("Aman"),
+    "titleWalkthrough3":
+    MessageLookupByLibrary.simpleMessage("Pengiriman Cepat"),
+    "titleWalkthrough4":
+    MessageLookupByLibrary.simpleMessage("Pembayaran Mudah")
+  };
 }

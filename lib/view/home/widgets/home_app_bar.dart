@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:go_router/go_router.dart';
 import 'package:my_marketplace/generated/assets.dart';
 import 'package:my_marketplace/generated/l10n.dart';
+import 'package:my_marketplace/util/constants/routes.dart';
 import 'package:my_marketplace/view/widgets/asset_colors.dart';
 import 'package:my_marketplace/view/widgets/space_horizontal.dart';
 
@@ -14,8 +16,6 @@ class HomeAppBar extends SliverPersistentHeaderDelegate {
   @override
   Widget build(
       BuildContext context, double shrinkOffset, bool overlapsContent) {
-    var colorFilter =
-        const ColorFilter.mode(AssetColors.ghostWhite, BlendMode.srcIn);
     var defaultInputBorder = const OutlineInputBorder(
         borderRadius: BorderRadius.all(Radius.circular(8)),
         borderSide: BorderSide(color: AssetColors.gray100));
@@ -26,7 +26,7 @@ class HomeAppBar extends SliverPersistentHeaderDelegate {
           children: [
             if (shrinkOffset < kToolbarHeight)
               Container(
-                color: Colors.yellow,
+                color: Colors.green,
                 child: const Center(
                   child: Text("Banner 1"),
                 ),
@@ -50,10 +50,11 @@ class HomeAppBar extends SliverPersistentHeaderDelegate {
                   ),
                   Row(
                     children: [
-                      SvgPicture.asset(Assets.imagesIcShoppingCart,
-                          colorFilter: colorFilter),
-                      SvgPicture.asset(Assets.imagesIcUser,
-                          colorFilter: colorFilter)
+                      appBarIcon(Assets.imagesIcShoppingCart, () {}),
+                      const SpaceHorizontal(),
+                      appBarIcon(Assets.imagesIcUser, () {
+                        context.push(Routes.profile);
+                      }),
                     ],
                   )
                 ],
@@ -96,4 +97,14 @@ class HomeAppBar extends SliverPersistentHeaderDelegate {
   @override
   bool shouldRebuild(covariant SliverPersistentHeaderDelegate oldDelegate) =>
       true;
+}
+
+extension HomeAppBarIcon on HomeAppBar {
+  Widget appBarIcon(String asset, Function() onClick) {
+    var colorFilter =
+        const ColorFilter.mode(AssetColors.ghostWhite, BlendMode.srcIn);
+    return InkWell(
+        onTap: onClick,
+        child: SvgPicture.asset(asset, colorFilter: colorFilter));
+  }
 }

@@ -31,5 +31,10 @@
   "textEmptyBirthday": "Please enter a valid birth-date",
   "textWrongPassword": "Your password/e-mail is incorrect, please try again",
   "textFailedRegister": "E-mail is registered, please try another e-mail",
-  "textLoading": "Loading ..."
+  "textLoading": "Loading ...",
+  "textLogout": "Logout",
+  "textLogoutConfirmation": "Are you sure you want to logout from this account ?",
+  "textYes": "Yes",
+  "textNo": "No",
+  "textConfirmation": "Confirmation"
 }
