@@ -440,6 +440,16 @@ class S {
       args: [],
     );
   }
+
+  /// `Product`
+  String get textProduct {
+    return Intl.message(
+      'Product',
+      name: 'textProduct',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

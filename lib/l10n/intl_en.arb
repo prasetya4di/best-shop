@@ -37,5 +37,6 @@
   "textYes": "Yes",
   "textNo": "No",
   "textConfirmation": "Confirmation",
-  "textCategory": "Category"
+  "textCategory": "Category",
+  "textProduct": "Product"
 }

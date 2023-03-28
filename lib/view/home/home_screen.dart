@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:my_marketplace/data/model/entity/category.dart';
+import 'package:my_marketplace/generated/l10n.dart';
 import 'package:my_marketplace/view/home/viewmodel/home_state.dart';
 import 'package:my_marketplace/view/home/viewmodel/home_viewmodel.dart';
 import 'package:my_marketplace/view/home/widgets/home_app_bar.dart';
 import 'package:my_marketplace/view/home/widgets/list_category.dart';
+import 'package:my_marketplace/view/home/widgets/list_products.dart';
+import 'package:my_marketplace/view/widgets/space_vertical.dart';
+import 'package:my_marketplace/view/widgets/text_title.dart';
 import 'package:provider/provider.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -15,7 +18,6 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     HomeViewModel viewModel = context.read();
     HomeState state = context.watch<HomeViewModel>().state;
-    List<Category> categories = context.watch<HomeViewModel>().categories;
     viewModel.init();
 
     WidgetsFlutterBinding.ensureInitialized().addPostFrameCallback((_) {
@@ -34,9 +36,22 @@ class HomeScreen extends StatelessWidget {
                   delegate: HomeAppBar(170, _searchController), pinned: true)
             ];
           },
-          body: Column(
-            children: [
-              ListCategory(categories: categories),
+          body: CustomScrollView(
+            slivers: [
+              SliverList(
+                  delegate: SliverChildListDelegate([
+                ListCategory(
+                    categories: context.watch<HomeViewModel>().categories),
+                const SpaceVertical(),
+                Padding(
+                  padding: const EdgeInsets.only(top: 12.0, left: 12),
+                  child: TextTitle.medium(text: S.of(context).textProduct),
+                ),
+              ])),
+              SliverToBoxAdapter(
+                child: ListProducts(
+                    products: context.watch<HomeViewModel>().products),
+              ),
             ],
           ),
         ),

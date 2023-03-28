@@ -66,6 +66,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "Password harus lebih dari 8 karakter"),
         "textPasswordMustContain": MessageLookupByLibrary.simpleMessage(
             "Password harus mengandung setidaknya satu huruf besar, \n angka, dan karakter spesial."),
+        "textProduct": MessageLookupByLibrary.simpleMessage("Produk"),
         "textRepeatPassword":
             MessageLookupByLibrary.simpleMessage("Ulangi Kata Sandi"),
         "textSearch": MessageLookupByLibrary.simpleMessage("Cari Barang ..."),

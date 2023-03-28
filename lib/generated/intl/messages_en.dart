@@ -67,6 +67,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "Please enter at least 8 characters"),
         "textPasswordMustContain": MessageLookupByLibrary.simpleMessage(
             "Password must contain at least one uppercase, \nlowercase, number, and a special character."),
+        "textProduct": MessageLookupByLibrary.simpleMessage("Product"),
         "textRepeatPassword":
             MessageLookupByLibrary.simpleMessage("Repeat Password"),
         "textSearch": MessageLookupByLibrary.simpleMessage("Search ..."),
