@@ -21,18 +21,24 @@ import 'package:my_marketplace/data/source/local/product_dao.dart';
 import 'package:my_marketplace/data/source/local/shopping_cart_dao.dart';
 import 'package:my_marketplace/data/source/local/user_dao.dart';
 import 'package:my_marketplace/data/source/local/walkthrough_dao.dart';
+import 'package:my_marketplace/domain/add_shopping_cart.dart';
 import 'package:my_marketplace/domain/check_login.dart';
 import 'package:my_marketplace/domain/check_onboarding_status.dart';
+import 'package:my_marketplace/domain/check_shopping_cart_item.dart';
 import 'package:my_marketplace/domain/check_walkthrough_status.dart';
+import 'package:my_marketplace/domain/delete_shopping_cart.dart';
 import 'package:my_marketplace/domain/get_categories.dart';
 import 'package:my_marketplace/domain/get_category_by_id.dart';
 import 'package:my_marketplace/domain/get_product_by_category.dart';
 import 'package:my_marketplace/domain/get_product_by_id.dart';
 import 'package:my_marketplace/domain/get_products.dart';
 import 'package:my_marketplace/domain/get_user.dart';
+import 'package:my_marketplace/domain/impl/add_shopping_cart_impl.dart';
 import 'package:my_marketplace/domain/impl/check_login_impl.dart';
 import 'package:my_marketplace/domain/impl/check_onboarding_status_impl.dart';
+import 'package:my_marketplace/domain/impl/check_shopping_cart_item_impl.dart';
 import 'package:my_marketplace/domain/impl/check_walkthrough_status_impl.dart';
+import 'package:my_marketplace/domain/impl/delete_shopping_cart_impl.dart';
 import 'package:my_marketplace/domain/impl/get_categories_impl.dart';
 import 'package:my_marketplace/domain/impl/get_category_by_id_impl.dart';
 import 'package:my_marketplace/domain/impl/get_product_by_category_impl.dart';
@@ -121,4 +127,9 @@ Future<void> setupDI() async {
   di.registerSingleton<Logout>(LogoutImpl(di.get()));
   di.registerSingleton<InitializeProducts>(InitializeProductsImpl(di.get()));
   di.registerSingleton<GetCategoryById>(GetCategoryByIdImpl(di.get()));
+  di.registerSingleton<AddShoppingCart>(
+      AddShoppingCartImpl(di.get(), di.get()));
+  di.registerSingleton<DeleteShoppingCart>(DeleteShoppingCartImpl(di.get()));
+  di.registerSingleton<CheckShoppingCartItem>(
+      CheckShoppingCartItemImpl(di.get(), di.get()));
 }
