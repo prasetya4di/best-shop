@@ -7,11 +7,12 @@ class Category extends Equatable {
   @Id()
   int obxId;
   final String name;
+  final String iconPath;
   @Backlink()
   final products = ToMany<Product>();
 
-  Category(this.name, {this.obxId = 0});
+  Category(this.name, this.iconPath, {this.obxId = 0});
 
   @override
-  List<Object?> get props => [name];
+  List<Object?> get props => [name, iconPath];
 }

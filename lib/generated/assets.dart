@@ -7,6 +7,15 @@ class Assets {
   static const String fontsPoppinsRegular = 'assets/fonts/Poppins-Regular.ttf';
   static const String fontsPoppinsSemiBold =
       'assets/fonts/Poppins-SemiBold.ttf';
+  static const String imagesCategoryBeauty =
+      'assets/images/category_beauty.png';
+  static const String imagesCategoryClothing =
+      'assets/images/category_clothing.png';
+  static const String imagesCategoryElectric =
+      'assets/images/category_electric.png';
+  static const String imagesCategoryFurniture =
+      'assets/images/category_furniture.png';
+  static const String imagesCategorySport = 'assets/images/category_sport.png';
   static const String imagesIcCalendar = 'assets/images/ic_calendar.svg';
   static const String imagesIcEye = 'assets/images/ic_eye.svg';
   static const String imagesIcEyeSlash = 'assets/images/ic_eye_slash.svg';

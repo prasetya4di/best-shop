@@ -5,7 +5,7 @@
   "entities": [
     {
       "id": "1:3616587330486626541",
-      "lastPropertyId": "2:5091183881348344987",
+      "lastPropertyId": "3:3640602540351947575",
       "name": "Category",
       "properties": [
         {
@@ -17,6 +17,11 @@
         {
           "id": "2:5091183881348344987",
           "name": "name",
+          "type": 9
+        },
+        {
+          "id": "3:3640602540351947575",
+          "name": "iconPath",
           "type": 9
         }
       ],

@@ -13,11 +13,16 @@ class InitializeProductsImpl implements InitializeProducts {
 
   @override
   call() {
-    Category electronic = generateCategoryWithProducts("Electronic");
-    Category furniture = generateCategoryWithProducts("Furniture");
-    Category clothing = generateCategoryWithProducts("Clothing");
-    Category beauty = generateCategoryWithProducts("Beauty");
-    Category sports = generateCategoryWithProducts("Sport");
+    Category electronic = generateCategoryWithProducts(
+        "Electronic", Assets.imagesCategoryElectric);
+    Category furniture = generateCategoryWithProducts(
+        "Furniture", Assets.imagesCategoryFurniture);
+    Category clothing =
+        generateCategoryWithProducts("Clothing", Assets.imagesCategoryClothing);
+    Category beauty =
+        generateCategoryWithProducts("Beauty", Assets.imagesCategoryBeauty);
+    Category sports =
+        generateCategoryWithProducts("Sport", Assets.imagesCategorySport);
     List<Category> categories = [
       electronic,
       furniture,
@@ -28,8 +33,8 @@ class InitializeProductsImpl implements InitializeProducts {
     _repository.inserts(categories);
   }
 
-  Category generateCategoryWithProducts(String name) {
-    Category category = Category(name);
+  Category generateCategoryWithProducts(String name, String assets) {
+    Category category = Category(name, assets);
     List<Product> productCategory = generateRandomProducts(category);
     category.products.addAll(productCategory);
     return category;
