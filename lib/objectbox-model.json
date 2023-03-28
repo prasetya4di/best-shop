@@ -170,7 +170,7 @@
     },
     {
       "id": "6:9184515146088950369",
-      "lastPropertyId": "5:3796192733885680631",
+      "lastPropertyId": "6:2435619095462051610",
       "name": "ShoppingCart",
       "properties": [
         {
@@ -188,14 +188,6 @@
           "relationTarget": "User"
         },
         {
-          "id": "3:1909348153407509501",
-          "name": "productsId",
-          "type": 11,
-          "flags": 520,
-          "indexId": "6:999828527355660602",
-          "relationTarget": "Product"
-        },
-        {
           "id": "4:39909680575138090",
           "name": "totalStock",
           "type": 6
@@ -204,6 +196,14 @@
           "id": "5:3796192733885680631",
           "name": "totalPrice",
           "type": 8
+        },
+        {
+          "id": "6:2435619095462051610",
+          "name": "productId",
+          "type": 11,
+          "flags": 520,
+          "indexId": "8:2876564402168778015",
+          "relationTarget": "Product"
         }
       ],
       "relations": []
@@ -271,7 +271,7 @@
     }
   ],
   "lastEntityId": "8:7680156814458254959",
-  "lastIndexId": "7:4569866529003787899",
+  "lastIndexId": "8:2876564402168778015",
   "lastRelationId": "0:0",
   "lastSequenceId": "0:0",
   "modelVersion": 5,
@@ -279,13 +279,16 @@
   "retiredEntityUids": [
     691846065207616785
   ],
-  "retiredIndexUids": [],
+  "retiredIndexUids": [
+    999828527355660602
+  ],
   "retiredPropertyUids": [
     3483994220296860933,
     6452773874815137646,
     2409667773516760689,
     2574862092352640441,
-    3836065903867437469
+    3836065903867437469,
+    1909348153407509501
   ],
   "retiredRelationUids": [],
   "version": 1
