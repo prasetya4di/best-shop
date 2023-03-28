@@ -2,16 +2,17 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:go_router/go_router.dart';
 import 'package:my_marketplace/generated/assets.dart';
-import 'package:my_marketplace/generated/l10n.dart';
 import 'package:my_marketplace/util/constants/routes.dart';
+import 'package:my_marketplace/view/home/widgets/search_bar.dart';
 import 'package:my_marketplace/view/widgets/asset_colors.dart';
 import 'package:my_marketplace/view/widgets/space_horizontal.dart';
 
 class HomeAppBar extends SliverPersistentHeaderDelegate {
   final double expandedHeight;
   final TextEditingController filter;
+  final Function(String) onSearchChanged;
 
-  HomeAppBar(this.expandedHeight, this.filter);
+  HomeAppBar(this.expandedHeight, this.filter, this.onSearchChanged);
 
   @override
   Widget build(
@@ -68,20 +69,15 @@ class HomeAppBar extends SliverPersistentHeaderDelegate {
           child: Container(
             padding: const EdgeInsets.all(12),
             width: shrinkOffset < 60
-                ? MediaQuery.of(context).size.width - shrinkOffset
-                : MediaQuery.of(context).size.width - 64,
-            child: TextField(
-                controller: filter,
-                style: Theme.of(context).textTheme.bodyMedium,
-                decoration: InputDecoration(
-                    filled: true,
-                    fillColor: AssetColors.gray100,
-                    hintText: S.of(context).textSearch,
-                    contentPadding: const EdgeInsets.symmetric(
-                        vertical: 16, horizontal: 18),
-                    border: defaultInputBorder,
-                    enabledBorder: defaultInputBorder,
-                    suffixIcon: const Icon(Icons.search))),
+                ? MediaQuery
+                .of(context)
+                .size
+                .width - shrinkOffset
+                : MediaQuery
+                .of(context)
+                .size
+                .width - 64,
+            child: SearchBar(filter: filter, onSearchChanged: onSearchChanged),
           ),
         ),
       ],

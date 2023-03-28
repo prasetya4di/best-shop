@@ -46,7 +46,7 @@ class MyApp extends StatelessWidget {
         ChangeNotifierProvider(
             create: (context) => ProfileViewModel(di.get(), di.get())),
         ChangeNotifierProvider(
-            create: (context) => HomeViewModel(di.get(), di.get())),
+            create: (context) => HomeViewModel(di.get(), di.get(), di.get())),
         ChangeNotifierProvider(
             create: (context) => ProductDetailViewModel(di.get())),
         ChangeNotifierProvider(

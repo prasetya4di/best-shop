@@ -32,26 +32,37 @@ class HomeScreen extends StatelessWidget {
           headerSliverBuilder: (BuildContext context, bool innerBoxIsScrolled) {
             return [
               SliverPersistentHeader(
-                  delegate: HomeAppBar(170, _searchController), pinned: true)
+                  delegate: HomeAppBar(170, _searchController, (value) {
+                    viewModel.searchProducts(value);
+                  }),
+                  pinned: true)
             ];
           },
           body: CustomScrollView(
-            slivers: [
-              SliverList(
-                  delegate: SliverChildListDelegate([
-                ListCategory(
-                    categories: context.watch<HomeViewModel>().categories),
-                const SpaceVertical(),
-                Padding(
-                  padding: const EdgeInsets.only(top: 12.0, left: 12),
-                  child: TextTitle.medium(text: S.of(context).textProduct),
-                ),
-              ])),
-              SliverToBoxAdapter(
-                child: ListProducts(
-                    products: context.watch<HomeViewModel>().products),
-              ),
-            ],
+            slivers: state is HomeProductsSearchedState
+                ? [
+                    SliverToBoxAdapter(
+                      child: ListProducts(products: state.products),
+                    )
+                  ]
+                : [
+                    SliverList(
+                        delegate: SliverChildListDelegate([
+                      ListCategory(
+                          categories:
+                              context.watch<HomeViewModel>().categories),
+                      const SpaceVertical(),
+                      Padding(
+                        padding: const EdgeInsets.only(top: 12.0, left: 12),
+                        child:
+                            TextTitle.medium(text: S.of(context).textProduct),
+                      ),
+                    ])),
+                    SliverToBoxAdapter(
+                      child: ListProducts(
+                          products: context.watch<HomeViewModel>().products),
+                    ),
+                  ],
           ),
         ),
       ),
