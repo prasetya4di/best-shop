@@ -32,6 +32,8 @@ class MessageLookup extends MessageLookupByLibrary {
             "Pesan hari ini, besok sampai, pesanan diterima dan diproses hari ini juga."),
         "descWalkthrough4": MessageLookupByLibrary.simpleMessage(
             "Bayar dengan semua metode pembayaran yang kamu miliki, transfer bank, e-wallet, kartu kredit, atau paylater ? semua nya bisa digunakan di sini."),
+        "emptySearch": MessageLookupByLibrary.simpleMessage(
+            "Ooopss, kami tidak dapat menemukan produk yang kamu cari, mohon coba beberapa saat lagi, atau coba kata kunci yang lain :)"),
         "textAddress": MessageLookupByLibrary.simpleMessage("Alamat"),
         "textBirthday": MessageLookupByLibrary.simpleMessage("Tanggal Lahir"),
         "textCategory": MessageLookupByLibrary.simpleMessage("Kategori"),

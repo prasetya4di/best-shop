@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:my_marketplace/generated/l10n.dart';
 import 'package:my_marketplace/view/home/viewmodel/home_state.dart';
 import 'package:my_marketplace/view/home/viewmodel/home_viewmodel.dart';
+import 'package:my_marketplace/view/home/widgets/empty_search.dart';
 import 'package:my_marketplace/view/home/widgets/home_app_bar.dart';
 import 'package:my_marketplace/view/home/widgets/list_category.dart';
 import 'package:my_marketplace/view/home/widgets/list_products.dart';
@@ -41,9 +42,14 @@ class HomeScreen extends StatelessWidget {
           body: CustomScrollView(
             slivers: state is HomeProductsSearchedState
                 ? [
-                    SliverToBoxAdapter(
-                      child: ListProducts(products: state.products),
-                    )
+                    if (state.products.isNotEmpty)
+                      SliverToBoxAdapter(
+                        child: ListProducts(products: state.products),
+                      ),
+                    if (state.products.isEmpty)
+                      SliverList(
+                          delegate:
+                              SliverChildListDelegate([const EmptySearch()])),
                   ]
                 : [
                     SliverList(

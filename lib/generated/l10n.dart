@@ -470,6 +470,16 @@ class S {
       args: [],
     );
   }
+
+  /// `Oooppss, the product you are looking for is currently unavailable. Please try again later, or try another keywords :)`
+  String get emptySearch {
+    return Intl.message(
+      'Oooppss, the product you are looking for is currently unavailable. Please try again later, or try another keywords :)',
+      name: 'emptySearch',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

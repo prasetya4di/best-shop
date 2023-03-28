@@ -40,5 +40,6 @@
   "textCategory": "Kategori",
   "textProduct": "Produk",
   "addToCart": "Tambahkan",
-  "buyNow": "Beli Sekarang"
+  "buyNow": "Beli Sekarang",
+  "emptySearch": "Ooopss, kami tidak dapat menemukan produk yang kamu cari, mohon coba beberapa saat lagi, atau coba kata kunci yang lain :)"
 }
