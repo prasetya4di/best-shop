@@ -43,5 +43,8 @@
   "buyNow": "Beli Sekarang",
   "emptySearch": "Ooopss, kami tidak dapat menemukan produk yang kamu cari, mohon coba beberapa saat lagi, atau coba kata kunci yang lain :)",
   "addedToShoppingCart": "Produk telah ditambahkan ke keranjang belanja",
-  "shoppingCart": "Keranjang Belanja"
+  "shoppingCart": "Keranjang Belanja",
+  "emptyShoppingCart": "Oooppss, keranjang belanja mu masih kosong, mulailah berbelanja dan dapatkan barang yang kamu impikan",
+  "deleteShoppingCart": "Hapus",
+  "deleteShoppingCartConfimation": "Apakah kamu yakin akan menghapus barang ini dari keranjang belanja ?"
 }

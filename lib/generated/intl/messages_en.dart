@@ -26,6 +26,9 @@ class MessageLookup extends MessageLookupByLibrary {
         "addedToShoppingCart": MessageLookupByLibrary.simpleMessage(
             "Product added to shopping cart"),
         "buyNow": MessageLookupByLibrary.simpleMessage("Buy Now"),
+        "deleteShoppingCart": MessageLookupByLibrary.simpleMessage("Delete"),
+        "deleteShoppingCartConfimation": MessageLookupByLibrary.simpleMessage(
+            "Are you sure you want to remove this item from your shopping cart ?"),
         "descWalkthrough1": MessageLookupByLibrary.simpleMessage(
             "Best shop, the best application for your daily shopping need, we have almost everything here, and you can order from wherever you are"),
         "descWalkthrough2": MessageLookupByLibrary.simpleMessage(
@@ -36,6 +39,8 @@ class MessageLookup extends MessageLookupByLibrary {
             "Pay with any payment method you have, transfer bank, e-wallet, credit card, or paylater ? we accept all payment way."),
         "emptySearch": MessageLookupByLibrary.simpleMessage(
             "Oooppss, the product you are looking for is currently unavailable. Please try again later, or try another keywords :)"),
+        "emptyShoppingCart": MessageLookupByLibrary.simpleMessage(
+            "Oooppss, your shopping cart is empty, start shopping your wished product now :)"),
         "shoppingCart": MessageLookupByLibrary.simpleMessage("Shopping Cart"),
         "textAddress": MessageLookupByLibrary.simpleMessage("Address"),
         "textBirthday": MessageLookupByLibrary.simpleMessage("Birth-date"),

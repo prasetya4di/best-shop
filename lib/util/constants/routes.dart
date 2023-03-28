@@ -9,4 +9,5 @@ class Routes {
   static const String detailProduct = "/product/:productId";
   static const String category = "/category";
   static const String detailCategory = "/category/:categoryId";
+  static const String shoppingCart = "/shopping_cart";
 }

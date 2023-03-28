@@ -26,6 +26,9 @@ class MessageLookup extends MessageLookupByLibrary {
         "addedToShoppingCart": MessageLookupByLibrary.simpleMessage(
             "Produk telah ditambahkan ke keranjang belanja"),
         "buyNow": MessageLookupByLibrary.simpleMessage("Beli Sekarang"),
+        "deleteShoppingCart": MessageLookupByLibrary.simpleMessage("Hapus"),
+        "deleteShoppingCartConfimation": MessageLookupByLibrary.simpleMessage(
+            "Apakah kamu yakin akan menghapus barang ini dari keranjang belanja ?"),
         "descWalkthrough1": MessageLookupByLibrary.simpleMessage(
             "Best shop, aplikasi terbaik untuk belanja kebutuhan harianmu, kita punya hampir semua yang kamu butuhkan di sini. dan kamu dapat memesan dari mana saja !"),
         "descWalkthrough2": MessageLookupByLibrary.simpleMessage(
@@ -36,6 +39,8 @@ class MessageLookup extends MessageLookupByLibrary {
             "Bayar dengan semua metode pembayaran yang kamu miliki, transfer bank, e-wallet, kartu kredit, atau paylater ? semua nya bisa digunakan di sini."),
         "emptySearch": MessageLookupByLibrary.simpleMessage(
             "Ooopss, kami tidak dapat menemukan produk yang kamu cari, mohon coba beberapa saat lagi, atau coba kata kunci yang lain :)"),
+        "emptyShoppingCart": MessageLookupByLibrary.simpleMessage(
+            "Oooppss, keranjang belanja mu masih kosong, mulailah berbelanja dan dapatkan barang yang kamu impikan"),
         "shoppingCart":
             MessageLookupByLibrary.simpleMessage("Keranjang Belanja"),
         "textAddress": MessageLookupByLibrary.simpleMessage("Alamat"),

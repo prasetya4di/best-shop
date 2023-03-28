@@ -17,6 +17,8 @@ class Assets {
       'assets/images/category_furniture.png';
   static const String imagesCategorySport = 'assets/images/category_sport.png';
   static const String imagesEmptySearch = 'assets/images/empty_search.svg';
+  static const String imagesEmptyShoppingCart =
+      'assets/images/empty_shopping_cart.svg';
   static const String imagesIcCalendar = 'assets/images/ic_calendar.svg';
   static const String imagesIcEye = 'assets/images/ic_eye.svg';
   static const String imagesIcEyeSlash = 'assets/images/ic_eye_slash.svg';

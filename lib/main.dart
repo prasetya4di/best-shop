@@ -16,6 +16,8 @@ import 'package:my_marketplace/view/profile/profile_screen.dart';
 import 'package:my_marketplace/view/profile/viewmodel/profile_viewmodel.dart';
 import 'package:my_marketplace/view/register/register_screen.dart';
 import 'package:my_marketplace/view/register/viewmodel/register_viewmodel.dart';
+import 'package:my_marketplace/view/shopping_cart/shopping_cart_screen.dart';
+import 'package:my_marketplace/view/shopping_cart/viewmodel/shopping_cart_viewmodel.dart';
 import 'package:my_marketplace/view/splash/splash_screen.dart';
 import 'package:my_marketplace/view/splash/viewmodel/splash_view_model.dart';
 import 'package:my_marketplace/view/walkthrough/viewmodel/walkthrough_viewmodel.dart';
@@ -53,6 +55,8 @@ class MyApp extends StatelessWidget {
         ChangeNotifierProvider(
             create: (context) =>
                 ProductPerCategoryViewModel(di.get(), di.get())),
+        ChangeNotifierProvider(
+            create: (context) => ShoppingCartViewModel(di.get(), di.get()))
       ],
       child: MaterialApp.router(
         title: 'Best Shop',
@@ -99,5 +103,8 @@ final _router = GoRouter(
         path: Routes.detailCategory,
         builder: (context, state) => ProductPerCategoryScreen(
             categoryId: int.parse(state.params['categoryId'] ?? "0"))),
+    GoRoute(
+        path: Routes.shoppingCart,
+        builder: (context, state) => ShoppingCartScreen()),
   ],
 );

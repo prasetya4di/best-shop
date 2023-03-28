@@ -43,5 +43,8 @@
   "buyNow": "Buy Now",
   "emptySearch": "Oooppss, the product you are looking for is currently unavailable. Please try again later, or try another keywords :)",
   "addedToShoppingCart": "Product added to shopping cart",
-  "shoppingCart": "Shopping Cart"
+  "shoppingCart": "Shopping Cart",
+  "emptyShoppingCart": "Oooppss, your shopping cart is empty, start shopping your wished product now :)",
+  "deleteShoppingCart": "Delete",
+  "deleteShoppingCartConfimation": "Are you sure you want to remove this item from your shopping cart ?"
 }

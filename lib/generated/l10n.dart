@@ -500,6 +500,36 @@ class S {
       args: [],
     );
   }
+
+  /// `Oooppss, your shopping cart is empty, start shopping your wished product now :)`
+  String get emptyShoppingCart {
+    return Intl.message(
+      'Oooppss, your shopping cart is empty, start shopping your wished product now :)',
+      name: 'emptyShoppingCart',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Delete`
+  String get deleteShoppingCart {
+    return Intl.message(
+      'Delete',
+      name: 'deleteShoppingCart',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Are you sure you want to remove this item from your shopping cart ?`
+  String get deleteShoppingCartConfimation {
+    return Intl.message(
+      'Are you sure you want to remove this item from your shopping cart ?',
+      name: 'deleteShoppingCartConfimation',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {
