@@ -3,6 +3,7 @@ import 'package:go_router/go_router.dart';
 import 'package:my_marketplace/data/model/entity/product.dart';
 import 'package:my_marketplace/generated/l10n.dart';
 import 'package:my_marketplace/view/product_detail/viewmodel/product_detail_viewmodel.dart';
+import 'package:my_marketplace/view/widgets/asset_colors.dart';
 import 'package:my_marketplace/view/widgets/space_horizontal.dart';
 import 'package:my_marketplace/view/widgets/text_title.dart';
 import 'package:provider/provider.dart';
@@ -38,9 +39,13 @@ class ProductDetailScreen extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    TextTitle.medium(text: product?.name ?? ""),
+                    TextTitle.large(text: product?.name ?? ""),
                     if (product?.category.hasValue ?? false)
-                      Text(product?.category.target?.name ?? ""),
+                      Text(
+                        product?.category.target?.name ?? "",
+                        style: const TextStyle(
+                            color: AssetColors.gray300, fontSize: 12),
+                      ),
                     Text("\$${product?.price}"),
                     Text("Qty: ${product?.stock}"),
                     Text(product?.description ?? ""),

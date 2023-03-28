@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:my_marketplace/view/product_per_category/viewmodel/product_per_category_viewmodel.dart';
+import 'package:my_marketplace/view/product_per_category/widgets/list_products.dart';
 import 'package:provider/provider.dart';
 
 class ProductPerCategoryScreen extends StatelessWidget {
@@ -23,6 +24,7 @@ class ProductPerCategoryScreen extends StatelessWidget {
         title: Text(category?.name ?? ""),
         foregroundColor: Colors.white,
       ),
+      body: ListProducts(products: products),
     );
   }
 }
