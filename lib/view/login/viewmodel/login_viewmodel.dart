@@ -12,6 +12,10 @@ class LoginViewModel extends ChangeNotifier {
 
   LoginState get loginState => _loginState;
 
+  init() {
+    _loginState = LoginStateIdle();
+  }
+
   login(String email, String password) {
     _loginState = LoginStateLoading();
     notifyListeners();

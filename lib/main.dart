@@ -74,6 +74,8 @@ final _router = GoRouter(
         path: Routes.register,
         builder: (context, state) => const RegisterScreen()),
     GoRoute(path: Routes.home, builder: (context, state) => HomeScreen()),
-    GoRoute(path: Routes.profile, builder: (context, state) => ProfileScreen()),
+    GoRoute(
+        path: Routes.profile,
+        builder: (context, state) => const ProfileScreen()),
   ],
 );

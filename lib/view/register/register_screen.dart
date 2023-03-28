@@ -37,6 +37,7 @@ class _RegisterScreen extends State<RegisterScreen> {
   void initState() {
     super.initState();
     viewModel = context.read();
+    viewModel.init();
   }
 
   @override
@@ -45,8 +46,7 @@ class _RegisterScreen extends State<RegisterScreen> {
 
     WidgetsFlutterBinding.ensureInitialized().addPostFrameCallback((_) {
       if (state is RegisterStateSuccess) {
-        context.pop();
-        context.pushReplacement(Routes.home);
+        context.go(Routes.home);
       }
     });
 

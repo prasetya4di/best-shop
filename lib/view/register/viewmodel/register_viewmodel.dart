@@ -12,6 +12,10 @@ class RegisterViewModel extends ChangeNotifier {
 
   RegisterState get registerState => _registerState;
 
+  init() {
+    _registerState = RegisterStateIdle();
+  }
+
   register(String email, String name, String address, String password,
       DateTime birthDate) {
     User? user = _register
