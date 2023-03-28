@@ -24,4 +24,7 @@ class CategoryRepositoryImpl implements CategoryRepository {
   clear() {
     _categoryDao.clear();
   }
+
+  @override
+  Category? getById(int id) => _categoryDao.getById(id);
 }

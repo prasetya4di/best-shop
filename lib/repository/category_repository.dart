@@ -7,5 +7,7 @@ abstract class CategoryRepository {
 
   List<Category> get();
 
+  Category? getById(int id);
+
   clear();
 }

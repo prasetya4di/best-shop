@@ -26,4 +26,7 @@ class CategoryDaoImpl implements CategoryDao {
   clear() {
     _box.removeAll();
   }
+
+  @override
+  Category? getById(int id) => _box.get(id);
 }

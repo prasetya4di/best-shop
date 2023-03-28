@@ -7,5 +7,7 @@ abstract class CategoryDao {
 
   List<Category> get();
 
+  Category? getById(int id);
+
   clear();
 }
