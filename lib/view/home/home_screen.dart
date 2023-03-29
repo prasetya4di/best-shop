@@ -36,12 +36,15 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     HomeState state = context.watch<HomeViewModel>().state;
 
+    double statusBarHeight = MediaQuery.of(context).viewPadding.top;
+
     return Scaffold(
       body: NestedScrollView(
         headerSliverBuilder: (BuildContext context, bool innerBoxIsScrolled) {
           return [
             SliverPersistentHeader(
-                delegate: HomeAppBar(230, _searchController, (value) {
+                delegate: HomeAppBar(170 + statusBarHeight, _searchController,
+                    (value) {
                   viewModel.searchProducts(value);
                 }),
                 pinned: true)

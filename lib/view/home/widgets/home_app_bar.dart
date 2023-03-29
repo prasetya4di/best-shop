@@ -16,18 +16,23 @@ class HomeAppBar extends SliverPersistentHeaderDelegate {
 
   HomeAppBar(this.expandedHeight, this.filter, this.onSearchChanged);
 
+  late double statusBarHeight;
+
   @override
   Widget build(
       BuildContext context, double shrinkOffset, bool overlapsContent) {
+    statusBarHeight = MediaQuery.of(context).viewPadding.top;
 
     return Stack(
       children: [
         Column(
           children: [
             SizedBox(
-              height: kToolbarHeight,
+              height: statusBarHeight,
               child: Container(
-                color: shrinkOffset < kToolbarHeight ? Colors.white : AssetColors.blue100,
+                color: shrinkOffset < kToolbarHeight
+                    ? Colors.white
+                    : AssetColors.blue100,
               ),
             ),
             if (shrinkOffset < kToolbarHeight)
@@ -94,7 +99,7 @@ class HomeAppBar extends SliverPersistentHeaderDelegate {
   double get maxExtent => expandedHeight;
 
   @override
-  double get minExtent => kToolbarHeight * 2 + 16;
+  double get minExtent => kToolbarHeight + statusBarHeight + 16;
 
   @override
   bool shouldRebuild(covariant SliverPersistentHeaderDelegate oldDelegate) =>
