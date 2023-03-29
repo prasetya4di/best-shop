@@ -69,7 +69,7 @@ Run app :
 
 | Home-1 | Home-2 | Home-3 | Home-4 |
 |-----|-----|-----|-----|
-|<img src="https://user-images.githubusercontent.com/84487845/228288654-726f09cb-4bda-4aa2-8643-c44b3b4ecdd5.png" width="200" height="355">|<img src="https://user-images.githubusercontent.com/84487845/228288664-c3e34e2c-d23a-460d-87d8-1c1f65be8dad.png" width="200" height="355">|<img src="https://user-images.githubusercontent.com/84487845/228288676-0c37dcca-b91a-4376-a739-732afa3a8e26.png" width="200" height="355">|<img src="https://user-images.githubusercontent.com/84487845/228288681-36aa7f62-bc83-41c0-b512-03070e3fd2b8.png" width="200" height="355">|
+|<img src="https://user-images.githubusercontent.com/84487845/228288654-726f09cb-4bda-4aa2-8643-c44b3b4ecdd5.png" width="200" height="355">|<img src="https://user-images.githubusercontent.com/84487845/228397519-9166f685-a135-47a2-a876-c8581ead925c.png" width="200" height="355">|<img src="https://user-images.githubusercontent.com/84487845/228397524-baa5186e-d2d1-47ed-82d8-d7a20dd48b58.png" width="200" height="355">|<img src="https://user-images.githubusercontent.com/84487845/228397531-d02c2b0b-9d9d-40a4-800e-68b6a20785e7.png" width="200" height="355">|
 
 - Product Per Category
 <img src="https://user-images.githubusercontent.com/84487845/228289150-f30baf0b-1bca-40ca-b80d-2a807e55b8eb.png" width="200" height="355">
